@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="color-scheme" content="light dark">
+
+        
+    <link rel="icon" type="image/png" href="/lc/lessons/img/logo.png" />
+
+
+        <title>Representing Colour</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/ace-builds@1.44.0/css/ace.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.pumpkin.min.css" />
+        <link rel="stylesheet" href="/lc/css/base.css?v=0" />
+
+        <script>
+            window.lc = {
+                entrypoints: {
+  "js/applets/searchbar/index.js": "artifacts/UPDON2X7.js",
+  "js/applets/text-editor/index.js": "artifacts/UZH4DRL5.js",
+  "js/applets/text-terminal/index.js": "artifacts/5ZXJMWOX.js",
+  "js/applets/videpo/index.js": "artifacts/T3ZRKWY7.js",
+  "js/lang/lang-worker.js": "artifacts/IYJVNSUE.js",
+  "js/applets/convolution-editor/index.js": "artifacts/TZNFOKIW.js",
+  "js/applets/geogebra/index.js": "artifacts/OLGJQVJE.js",
+  "js/applets/lesson-starter/index.js": "artifacts/VY7TXQSS.js",
+  "js/applets/minide/index.js": "artifacts/SAXNV755.js",
+  "js/applets/python-golf/index.js": "artifacts/KE5R4YQ4.js",
+  "js/applets/question-selector/index.js": "artifacts/6OBRDW2S.js",
+  "js/applets/sandbox/index.js": "artifacts/VPG3CPON.js"
+},
+                env: {
+  "files": {
+    "colour-test.py": "colour = rgb(255, 255, 0)\nPen(colour).rectangle((-100, -100), (100, 100))\n",
+    "colour-gradient.py": "for x in range(256):\n    colour = rgb(0, x, 0)\n    Pen(colour).rectangle((x - 128, -100), (x - 127, 100))\n",
+    "colour-square.py": "for y in range(256):\n    for x in range(256):\n        colour = rgb(0, y, x)\n        Pen(colour).plot(x - 128, y - 128)\n"
+  }
+},
+            }
+        </script>
+        <script src="/lc/artifacts/SAXNV755.js" type="module" defer></script>
+    </head>
+    <body>
+        <header class="container">
+            <nav id="title-nav">
+                
+    <div>
+        <img src="/lc/lessons/img/logo.png" />
+        <a href="/lc/lessons/">
+            DHHQ Maths &amp; CS
+        </a>
+    </div>
+    <div>
+        <strong>Representing Colour</strong>
+        <a href="../">
+            <img class="icon" src="/lc/img/icons/arrow-up.svg" />
+        </a>
+    </div>
+
+            </nav>
+        </header>
+        <main id="centre-column" class="container">
+            
+    <p>
+        In this lesson page, you will learn about the
+        <em>RGB colour system</em> and explore programming with
+        colour using Python.
+    </p>
+    <div class="applet hidden" data-applet="minide">{
+  "filepaths": [
+    "colour-test.py",
+    "colour-gradient.py",
+    "colour-square.py"
+  ],
+  "gfx": {
+    "width": 400,
+    "height": 400
+  }
+}</div>
+
+        </main>
+        <div id="modal-layer" class="modal-layer hidden">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+// While loops
+
+DECLARE Value : INTEGER
+Value <- 10
+
+IF 12 > Value THEN
+    Value <- 5
+ENDIF
+
+IF Value > 5 THEN
+    Value <- 2
+ENDIF
+
+CASE OF Value
+    2: Value <- 0
+    5: Value <- 16
+    12: Value <- 0
+    OTHERWISE: Value <- 0
+ENDCASE
+
+ASSERT Value = 16
+
+OUTPUT "All tests passed!"

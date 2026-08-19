@@ -1,0 +1,34 @@
+.ai-chat-window {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 16rem;
+
+    & div.content {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        flex-grow: 1;
+    }
+
+    div.username {
+        color: var(--pico-primary);
+    }
+
+    div.date {
+        text-align: right;
+        color: var(--pico-secondary);
+    }
+
+    div.speech {
+        whitespace: pre-wrap;
+    }
+
+    & textarea {
+        background: white;
+        color: black;
+        margin: 0;
+        border: 0;
+        padding: 0;
+        resize: none;
+        height: 4rem;
+    }
+}

@@ -1,0 +1,59 @@
+& .text-terminal {
+    background: black;
+    color: #0e0;
+    font-family: monospace;
+    font-size: 1rem;
+
+    position: relative;
+    height: 30rem;
+    display: block;
+
+    & .content {
+        position: absolute;
+        inset: 0;
+        height: 100%;
+
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: stretch;
+        justify-items: start;
+        overflow-y: scroll;
+    }
+
+    & .dynamic-canvas {
+        position: absolute;
+        inset: 0;
+        height: 100%;
+    }
+
+    & div,
+    & input.terminal-input {
+        padding: 0;
+        border: 0;
+        margin: 0;
+        border-radius: 0;
+        background: transparent;
+        line-height: 1rem;
+        height: 1rem;
+        vertical-align: bottom;
+    }
+
+    & input.terminal-input,
+    & input.terminal-input:focus,
+    & input.terminal-input:focus-visible {
+        caret-color: #0e0;
+        caret-shape: block;
+        outline: none;
+        box-shadow: none;
+        color: #eee;
+    }
+
+    & .colour0 { color: #444; }
+    & .colour1 { color: #00e; }
+    & .colour2 { color: #0e0; }
+    & .colour3 { color: #0ee; }
+    & .colour4 { color: #e00; }
+    & .colour5 { color: #e0e; }
+    & .colour6 { color: #ee0; }
+    & .colour7 { color: #eee; }
+}

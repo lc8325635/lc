@@ -1,0 +1,10 @@
+t = Turtle()
+
+t.go(100)
+t.turn(90)
+t.go(100)
+t.turn(90)
+t.go(100)
+t.turn(90)
+t.go(100)
+t.turn(90)

@@ -1,0 +1,46 @@
+.videpo {
+    & .media-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 0.125rem;
+        grid-row-gap: 0.125rem;
+    }
+
+    & div.thumbnail {
+        position: relative;
+
+        & img {
+            max-height: 5rem;
+        }
+
+        & input {
+            position: absolute;
+            bottom: 2px;
+            left: 2px;
+        }
+    }
+
+    & article.preview {
+        filter: grayscale(100%);
+    }
+
+    & footer {
+        text-align: center;
+        font-size: small;
+    }
+
+    & .media-player {
+        max-width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+
+        & video {
+            width: 100%;
+        }
+
+        & audio {
+            width: 100%;
+        }
+    }
+}

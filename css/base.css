@@ -1,0 +1,83 @@
+@font-face {
+  font-family: digital;
+  src: url('../img/fonts/digital-7.ttf');
+}
+
+/*********************************************************************
+ * Miscellaneous utility classes                                     *
+ *********************************************************************/
+
+.hidden {
+    display: none !important;
+}
+
+.toolbar {
+    & select {
+        margin: 0;
+        height: 3rem;
+    }
+
+    & button {
+        margin: 0;
+        height: 3rem;
+    }
+}
+
+article.lesson {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  .icon {
+    filter: brightness(0) invert(1);
+  }
+}
+
+#title-nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        max-width: 3rem;
+        max-height: 3rem;
+    }
+}
+
+#centre-column {
+    max-width: 40rem;
+}
+
+.modal-layer {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+button.icon-button {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    color: var(--pico-form-element-color);
+
+    border-radius: 0;
+    overflow: hidden;
+
+    background: transparent;
+    border: var(--pico-border-width) solid var(--pico-form-element-border-color);
+}
+
+img.icon {
+    padding: 0.25rem;
+}

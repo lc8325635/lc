@@ -1,0 +1,43 @@
+& .text-editor {
+    & .main {
+        position: relative;
+        width: 100%;
+        height: 15rem;
+
+        & .ace-editor {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    & .toolbar {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 4fr;
+        place-content: stretch;
+        place-items: end stretch;
+        grid-gap: 1px;
+    }
+
+    & .file-info {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: stretch;
+        justify-content: end;
+        place-self: stretch;
+    }
+
+    & .status-text {
+        font-size: small;
+        text-align: right;
+    }
+
+    & .status-bar {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

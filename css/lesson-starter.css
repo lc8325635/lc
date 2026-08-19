@@ -1,0 +1,40 @@
+.lesson-starter {
+    .settings {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+
+    .content {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 95vh;
+    }
+
+    .date {
+        font-size: 150%;
+        text-align: right;
+    }
+
+    .title {
+        font-size: 300%;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .countdown {
+        font-family: digital, monospace;
+        font-size: 25vh;
+        color: green;
+        text-align: center;
+    }
+
+    .countup {
+        font-family: digital, monospace;
+        font-size: 25vh;
+        color: red;
+        text-align: center;
+    }
+}

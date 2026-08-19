@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="color-scheme" content="light dark">
+
+        
+    <link rel="icon" type="image/png" href="/lc/lessons/img/logo.png" />
+
+
+        <title>Index</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/ace-builds@1.44.0/css/ace.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.pumpkin.min.css" />
+        <link rel="stylesheet" href="/lc/css/base.css?v=0" />
+
+        <script>
+            window.lc = {
+                entrypoints: {
+  "js/applets/searchbar/index.js": "artifacts/UPDON2X7.js",
+  "js/applets/text-editor/index.js": "artifacts/UZH4DRL5.js",
+  "js/applets/text-terminal/index.js": "artifacts/5ZXJMWOX.js",
+  "js/applets/videpo/index.js": "artifacts/T3ZRKWY7.js",
+  "js/lang/lang-worker.js": "artifacts/IYJVNSUE.js",
+  "js/applets/convolution-editor/index.js": "artifacts/TZNFOKIW.js",
+  "js/applets/geogebra/index.js": "artifacts/OLGJQVJE.js",
+  "js/applets/lesson-starter/index.js": "artifacts/VY7TXQSS.js",
+  "js/applets/minide/index.js": "artifacts/SAXNV755.js",
+  "js/applets/python-golf/index.js": "artifacts/KE5R4YQ4.js",
+  "js/applets/question-selector/index.js": "artifacts/6OBRDW2S.js",
+  "js/applets/sandbox/index.js": "artifacts/VPG3CPON.js"
+},
+                env: {
+  "files": {
+    "test1.py": "print(\"This is some text\")\nname = input(\"Enter your name:\")\nprint(\"Hello\", name)\n",
+    "test2.py": "print(\"Turtle demo!\")\nfred = Turtle(\"red\") # Fred is a turtle who draws red lines.\nfred.speed(1) # Choose a number < 1 if you want Fred to go faster.\n\nfred.go(100)\nfred.turn(120)\nfred.go(100)\nfred.turn(120)\nfred.go(100)\n",
+    "test1.cie": "// Test basic arithmetic\n\nASSERT 10 + 15 = 25\nASSERT 10 - 15 = -5\nASSERT 7 * 8 = 56\nASSERT 3 / 2 = 1.5\nASSERT 11 ^ 2 = 121\n\n// Test inequalities\n\nASSERT 8 > 4\nASSERT NOT (4 > 8)\nASSERT -3 < 1\nASSERT NOT (1 < -3)\nASSERT 6 >= 3\nASSERT 6 >= 6\nASSERT 6 < 10\nASSERT 6 <= 10\n\n// Test integer variables\n\nDECLARE Var1 : INTEGER\nDECLARE Var2 : INTEGER\n\nVar1 <- 131\nVar2 <- 157\n\nASSERT Var2 - Var1 = 26\n\n// Test constants\n\nCONSTANT Pi = 3.1415265\n\nASSERT 2.0 * Pi > 6.28\nASSERT 2.0 * Pi < 6.29\n\nOUTPUT \"All tests passed!\"\n",
+    "test2.cie": "// While loops\n\nDECLARE Value : INTEGER\nValue <- 10\n\nIF 12 > Value THEN\n    Value <- 5\nENDIF\n\nIF Value > 5 THEN\n    Value <- 2\nENDIF\n\nCASE OF Value\n    2: Value <- 0\n    5: Value <- 16\n    12: Value <- 0\n    OTHERWISE: Value <- 0\nENDCASE\n\nASSERT Value = 16\n\nOUTPUT \"All tests passed!\"\n",
+    "test3.cie": "DECLARE Total : INTEGER\nDECLARE Count : INTEGER\n\n// FOR loops\n\nTotal <- 0\nFOR Count <- 1 TO 10\n    Total <- Total + Count\nNEXT Count\n\nASSERT Total = 55\n\n// Reverse FOR loops\n\nTotal <- 0\nFOR Count <- 10 TO 1 STEP -1\n    Total <- Total + Count\nNEXT Count\n\nASSERT Total = 55\n\n// REPEAT loops\n\nTotal <- 0\nCount <- 0\nREPEAT \n    Total <- Total + Count\n    Count <- Count + 1\nUNTIL Count = 10\n\nASSERT Total = 45\n\n// WHILE loops\n\nTotal <- 0\nCount <- 0\nWHILE Count <= 10 DO\n    Total <- Total + Count\n    Count <- Count + 1\nENDWHILE\n\nASSERT Total = 55\n\nOUTPUT \"All tests passed!\"\n",
+    "test4.cie": "// Test 1D array declaration\n\nDECLARE Scores : ARRAY[1:20] OF INTEGER\nScores[1] <- 7\nASSERT Scores[1] = 7\n\nDECLARE Foo : ARRAY[1:10,1:2] OF STRING\nFoo[2,2] <- \"Hello\"\nOUTPUT Foo[2,2]\n\nOUTPUT \"Tests passed!\"\n",
+    "test5.cie": "PROCEDURE Foo(name: STRING, age: INTEGER)\n OUTPUT \"Hello\", name, age\nENDPROCEDURE\n\nOUTPUT \"Hello before call\"\nCALL Foo(\"Fred\", 20)\nOUTPUT \"Hello after call\"\n",
+    "test6.cie": "TYPE Person\n DECLARE Name : STRING\n DECLARE Age : INTEGER\nENDTYPE\n\nDECLARE Employee : Person\nEmployee.Name <- \"Fred\"\nEmployee.Age <- 31\n\nASSERT Employee.Name = \"Fred\"\nASSERT Employee.Age = 31\n\nOUTPUT \"All tests passed!\"\n"
+  }
+},
+            }
+        </script>
+        <script src="/lc/artifacts/SAXNV755.js" type="module" defer></script>
+    </head>
+    <body>
+        <header class="container">
+            <nav id="title-nav">
+                
+    <div>
+        <img src="/lc/lessons/img/logo.png" />
+        <a href="/lc/lessons/">
+            DHHQ Maths &amp; CS
+        </a>
+    </div>
+    <div>
+        <strong>Index</strong>
+        <a href="../">
+            <img class="icon" src="/lc/img/icons/arrow-up.svg" />
+        </a>
+    </div>
+
+            </nav>
+        </header>
+        <main id="centre-column" class="container">
+            
+    <div class="applet hidden" data-applet="minide">{
+  "filepaths": [
+    "test1.py",
+    "test2.py",
+    "test1.cie",
+    "test2.cie",
+    "test3.cie",
+    "test4.cie",
+    "test5.cie",
+    "test6.cie"
+  ]
+}</div>
+
+        </main>
+        <div id="modal-layer" class="modal-layer hidden">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="color-scheme" content="light dark">
+
+        
+    <link rel="icon" type="image/png" href="/lc/lessons/img/logo.png" />
+
+
+        <title>Chaikins Algorithm</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/ace-builds@1.44.0/css/ace.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.pumpkin.min.css" />
+        <link rel="stylesheet" href="/lc/css/base.css?v=0" />
+
+        <script>
+            window.lc = {
+                entrypoints: {
+  "js/applets/searchbar/index.js": "artifacts/UPDON2X7.js",
+  "js/applets/text-editor/index.js": "artifacts/UZH4DRL5.js",
+  "js/applets/text-terminal/index.js": "artifacts/5ZXJMWOX.js",
+  "js/applets/videpo/index.js": "artifacts/T3ZRKWY7.js",
+  "js/lang/lang-worker.js": "artifacts/IYJVNSUE.js",
+  "js/applets/convolution-editor/index.js": "artifacts/TZNFOKIW.js",
+  "js/applets/geogebra/index.js": "artifacts/OLGJQVJE.js",
+  "js/applets/lesson-starter/index.js": "artifacts/VY7TXQSS.js",
+  "js/applets/minide/index.js": "artifacts/SAXNV755.js",
+  "js/applets/python-golf/index.js": "artifacts/KE5R4YQ4.js",
+  "js/applets/question-selector/index.js": "artifacts/6OBRDW2S.js",
+  "js/applets/sandbox/index.js": "artifacts/VPG3CPON.js"
+},
+                env: {
+  "files": {
+    "prelude.py": "def _path(*pts):\n    return [ Pt.of(x * 10 - 50, y * 10 - 50) for (x, y) in pts ]\n\nsquare = _path( (10, 10), (10, -10), (-10, -10), (-10, 10) )\nletter = {\n    \"a\" : _path( (2, 5), (2, 6), (9, 6), (9, 0), (2, 0), (2, 4), (9, 4) ),\n    \"b\" : _path( (2, 10), (2, 0), (9, 0), (9, 5), (2, 5) ),\n    \"c\" : _path( (9, 6), (2, 6), (2, 0), (9, 0) ),\n    \"d\" : _path( (9, 10), (9, 0), (2, 0), (2, 5), (9, 5) ),\n    \"e\" : _path( (2, 4), (9, 4), (9, 6), (2, 6), (2, 0), (9, 0), (9, 1) ),\n    \"f\" : _path( (9, 10), (5, 10), (5, 0), (2, 0), (2, 5), (7, 5) ),\n    \"g\" : _path( (9, 3), (2, 3), (2, 6), (9, 6), (9, 0), (2, 0), (2, 1) ),\n}\n\ndef chaikin(path, closed = False):\n    if len(path) <= 2: return path\n\n    if closed:\n        path = path[:]\n        path.append(path[0])\n\n    new_path = []\n    num_points = len(path)\n    if not closed: new_path.append(path[0])\n    \n    for i in range(1, num_points):\n        pt1 = path[i - 1]\n        pt2 = path[i]\n        new_path.append(pt1 * 0.75 + pt2 * 0.25)\n        new_path.append(pt1 * 0.25 + pt2 * 0.75)\n\n    if not closed: new_path.append(path[-1])\n    return new_path\n"
+  }
+},
+            }
+        </script>
+        <script src="/lc/artifacts/SAXNV755.js" type="module" defer></script>
+    </head>
+    <body>
+        <header class="container">
+            <nav id="title-nav">
+                
+    <div>
+        <img src="/lc/lessons/img/logo.png" />
+        <a href="/lc/lessons/">
+            DHHQ Maths &amp; CS
+        </a>
+    </div>
+    <div>
+        <strong>Chaikins Algorithm</strong>
+        <a href="../">
+            <img class="icon" src="/lc/img/icons/arrow-up.svg" />
+        </a>
+    </div>
+
+            </nav>
+        </header>
+        <main id="centre-column" class="container">
+            
+    <p>
+        In this lesson, you will use turtle graphics to draw
+        geometric diagrams.
+    </p>
+    <p>
+        Take a look at the example program below to help you get
+        started.
+    </p>
+    <div class="applet hidden" data-applet="minide">{
+  "filepaths": [
+    "chaikin.py"
+  ],
+  "prelude": "prelude.py",
+  "gfx": {
+    "width": 400,
+    "height": 400
+  }
+}</div>
+
+        </main>
+        <div id="modal-layer" class="modal-layer hidden">
+        </div>
+    </body>
+</html>

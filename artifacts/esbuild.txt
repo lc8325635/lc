@@ -1,0 +1,3145 @@
+{
+  "inputs": {
+    "js/lang/cie/tokeniser/Token.js": {
+      "bytes": 366,
+      "imports": [],
+      "format": "esm"
+    },
+    "js/lang/error/Ref.js": {
+      "bytes": 215,
+      "imports": [],
+      "format": "esm"
+    },
+    "js/lang/error/UserCodeError.js": {
+      "bytes": 267,
+      "imports": [],
+      "format": "esm"
+    },
+    "js/lang/error/index.js": {
+      "bytes": 199,
+      "imports": [
+        {
+          "path": "js/lang/error/Ref.js",
+          "kind": "import-statement",
+          "original": "./Ref.js"
+        },
+        {
+          "path": "js/lang/error/UserCodeError.js",
+          "kind": "import-statement",
+          "original": "./UserCodeError.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/lang/cie/error/index.js": {
+      "bytes": 71,
+      "imports": [
+        {
+          "path": "js/lang/error/index.js",
+          "kind": "import-statement",
+          "original": "../../error/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/lang/cie/tokeniser/Lexer.js": {
+      "bytes": 1231,
+      "imports": [
+        {
+          "path": "js/lang/cie/tokeniser/Token.js",
+          "kind": "import-statement",
+          "original": "./Token.js"
+        },
+        {
+          "path": "js/lang/cie/error/index.js",
+          "kind": "import-statement",
+          "original": "../error/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/lang/cie/tokeniser/Tokeniser.js": {
+      "bytes": 3086,
+      "imports": [
+        {
+          "path": "js/lang/cie/tokeniser/Token.js",
+          "kind": "import-statement",
+          "original": "./Token.js"
+        },
+        {
+          "path": "js/lang/cie/tokeniser/Lexer.js",
+          "kind": "import-statement",
+          "original": "./Lexer.js"
+        },
+        {
+          "path": "js/lang/cie/error/index.js",
+          "kind": "import-statement",
+          "original": "../error/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/lang/cie/tokeniser/TokenReader.js": {
+      "bytes": 1160,
+      "imports": [
+        {
+          "path": "js/lang/cie/tokeniser/Token.js",
+          "kind": "import-statement",
+          "original": "./Token.js"
+        },
+        {
+          "path": "js/lang/cie/error/index.js",
+          "kind": "import-statement",
+          "original": "../error/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/lang/cie/tokeniser/index.js": {
+      "bytes": 350,
+      "imports": [
+        {
+          "path": "js/lang/cie/tokeniser/Lexer.js",
+          "kind": "import-statement",
+          "original": "./Lexer.js"
+        },
+        {
+          "path": "js/lang/cie/tokeniser/Token.js",
+          "kind": "import-statement",
+          "original": "./Token.js"
+        },
+        {
+          "path": "js/lang/cie/tokeniser/Tokeniser.js",
+          "kind": "import-statement",
+          "original": "./Tokeniser.js"
+        },
+        {
+          "path": "js/lang/cie/tokeniser/TokenReader.js",
+          "kind": "import-statement",
+          "original": "./TokenReader.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/lang/cie/parser/Node.js": {
+      "bytes": 1484,
+      "imports": [
+        {
+          "path": "js/lang/cie/error/index.js",
+          "kind": "import-statement",
+          "original": "../error/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/lang/cie/types/AbstractType.js": {
+      "bytes": 420,
+      "imports": [],
+      "format": "esm"
+    },
+    "js/lang/cie/types/PrimitiveType.js": {
+      "bytes": 1057,
+      "imports": [
+        {
+          "path": "js/lang/cie/types/AbstractType.js",
+          "kind": "import-statement",
+          "original": "./AbstractType.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/lang/cie/types/ArrayType.js": {
+      "bytes": 1686,
+      "imports": [
+        {
+          "path": "js/lang/cie/types/AbstractType.js",
+          "kind": "import-statement",
+          "original": "./AbstractType.js"
+        },
+        {
+          "path": "js/lang/error/index.js",
+          "kind": "import-statement",
+          "original": "../../../lang/error/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/lang/cie/types/Dimension.js": {
+      "bytes": 182,
+      "imports": [],
+      "format": "esm"
+    },
+    "js/lang/cie/types/RecordType.js": {
+      "bytes": 1284,
+      "imports": [
+        {
+          "path": "js/lang/cie/types/AbstractType.js",
+          "kind": "import-statement",
+          "original": "./AbstractType.js"
+        },
+        {
+          "path": "js/lang/cie/error/index.js",
+          "kind": "import-statement",
+          "original": "../error/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/lang/cie/types/index.js": {
+      "bytes": 1755,
+      "imports": [
+        {
+          "path": "js/lang/cie/types/PrimitiveType.js",
+          "kind": "import-statement",
+          "original": "./PrimitiveType.js"
+        },
+        {
+          "path": "js/lang/cie/types/ArrayType.js",
+          "kind": "import-statement",
+          "original": "./ArrayType.js"
+        },
+        {
+          "path": "js/lang/cie/types/Dimension.js",
+          "kind": "import-statement",
+          "original": "./Dimension.js"
+        },
+        {
+          "path": "js/lang/cie/types/RecordType.js",
+          "kind": "import-statement",
+          "original": "./RecordType.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/lang/cie/runtime/VmValue.js": {
+      "bytes": 4854,
+      "imports": [
+        {
+          "path": "js/lang/cie/types/index.js",
+          "kind": "import-statement",
+          "original": "../types/index.js"
+        },
+        {
+          "path": "js/lang/cie/error/index.js",
+          "kind": "import-statement",
+          "original": "../error/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/lang/cie/runtime/VmInstruction.js": {
+      "bytes": 410,
+      "imports": [
+        {
+          "path": "js/lang/error/index.js",
+          "kind": "import-statement",
+          "original": "../../../lang/error/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/lang/cie/runtime/VmFunction.js": {
+      "bytes": 2699,
+      "imports": [
+        {
+          "path": "js/lang/cie/types/index.js",
+          "kind": "import-statement",
+          "original": "../types/index.js"
+        },
+        {
+          "path": "js/lang/cie/error/index.js",
+          "kind": "import-statement",
+          "original": "../error/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/lang/cie/runtime/VmVariable.js": {
+      "bytes": 951,
+      "imports": [
+        {
+          "path": "js/lang/cie/error/index.js",
+          "kind": "import-statement",
+          "original": "../error/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/lang/cie/runtime/VmScope.js": {
+      "bytes": 11747,
+      "imports": [
+        {
+          "path": "js/lang/cie/runtime/VmVariable.js",
+          "kind": "import-statement",
+          "original": "./VmVariable.js"
+        },
+        {
+          "path": "js/lang/cie/runtime/VmValue.js",
+          "kind": "import-statement",
+          "original": "./VmValue.js"
+        },
+        {
+          "path": "js/lang/cie/error/index.js",
+          "kind": "import-statement",
+          "original": "../error/index.js"
+        },
+        {
+          "path": "js/lang/cie/types/index.js",
+          "kind": "import-statement",
+          "original": "../types/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/lang/cie/runtime/Vm.js": {
+      "bytes": 992,
+      "imports": [
+        {
+          "path": "js/lang/cie/runtime/VmScope.js",
+          "kind": "import-statement",
+          "original": "./VmScope.js"
+        },
+        {
+          "path": "js/lang/cie/error/index.js",
+          "kind": "import-statement",
+          "original": "../error/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/lang/cie/runtime/index.js": {
+      "bytes": 272,
+      "imports": [
+        {
+          "path": "js/lang/cie/runtime/VmValue.js",
+          "kind": "import-statement",
+          "original": "./VmValue.js"
+        },
+        {
+          "path": "js/lang/cie/runtime/VmInstruction.js",
+          "kind": "import-statement",
+          "original": "./VmInstruction.js"
+        },
+        {
+          "path": "js/lang/cie/runtime/VmFunction.js",
+          "kind": "import-statement",
+          "original": "./VmFunction.js"
+        },
+        {
+          "path": "js/lang/cie/runtime/VmScope.js",
+          "kind": "import-statement",
+          "original": "./VmScope.js"
+        },
+        {
+          "path": "js/lang/cie/runtime/Vm.js",
+          "kind": "import-statement",
+          "original": "./Vm.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/lang/cie/parser/Parser.js": {
+      "bytes": 18320,
+      "imports": [
+        {
+          "path": "js/lang/cie/parser/Node.js",
+          "kind": "import-statement",
+          "original": "./Node.js"
+        },
+        {
+          "path": "js/lang/cie/runtime/index.js",
+          "kind": "import-statement",
+          "original": "../runtime/index.js"
+        },
+        {
+          "path": "js/lang/cie/types/index.js",
+          "kind": "import-statement",
+          "original": "../types/index.js"
+        },
+        {
+          "path": "js/lang/cie/error/index.js",
+          "kind": "import-statement",
+          "original": "../error/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/lang/cie/parser/index.js": {
+      "bytes": 176,
+      "imports": [
+        {
+          "path": "js/lang/cie/parser/Node.js",
+          "kind": "import-statement",
+          "original": "./Node.js"
+        },
+        {
+          "path": "js/lang/cie/parser/Parser.js",
+          "kind": "import-statement",
+          "original": "./Parser.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/lang/cie/compiler/Compiler.js": {
+      "bytes": 3621,
+      "imports": [
+        {
+          "path": "js/lang/cie/runtime/index.js",
+          "kind": "import-statement",
+          "original": "../runtime/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/lang/cie/compiler/index.js": {
+      "bytes": 269,
+      "imports": [
+        {
+          "path": "js/lang/cie/error/index.js",
+          "kind": "import-statement",
+          "original": "../error/index.js"
+        },
+        {
+          "path": "js/lang/cie/compiler/Compiler.js",
+          "kind": "import-statement",
+          "original": "./Compiler.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/lang/cie/index.js": {
+      "bytes": 875,
+      "imports": [
+        {
+          "path": "js/lang/cie/tokeniser/index.js",
+          "kind": "import-statement",
+          "original": "./tokeniser/index.js"
+        },
+        {
+          "path": "js/lang/cie/parser/index.js",
+          "kind": "import-statement",
+          "original": "./parser/index.js"
+        },
+        {
+          "path": "js/lang/cie/compiler/index.js",
+          "kind": "import-statement",
+          "original": "./compiler/index.js"
+        },
+        {
+          "path": "js/lang/cie/runtime/index.js",
+          "kind": "import-statement",
+          "original": "./runtime/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/lang/python/skulpt/skulpt.js": {
+      "bytes": 1270619,
+      "imports": []
+    },
+    "js/lang/python/skulpt/skulpt-stdlib.js": {
+      "bytes": 407300,
+      "imports": []
+    },
+    "js/lang/python/xlibs/io.js": {
+      "bytes": 1216,
+      "imports": [],
+      "format": "esm"
+    },
+    "js/lang/python/xlibs/index.js": {
+      "bytes": 30,
+      "imports": [
+        {
+          "path": "js/lang/python/xlibs/io.js",
+          "kind": "import-statement",
+          "original": "./io.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/lang/python/standard-prelude.js": {
+      "bytes": 3845,
+      "imports": [],
+      "format": "esm"
+    },
+    "js/lang/python/index.js": {
+      "bytes": 2647,
+      "imports": [
+        {
+          "path": "js/lang/python/skulpt/skulpt.js",
+          "kind": "import-statement",
+          "original": "./skulpt/skulpt.js"
+        },
+        {
+          "path": "js/lang/python/skulpt/skulpt-stdlib.js",
+          "kind": "import-statement",
+          "original": "./skulpt/skulpt-stdlib.js"
+        },
+        {
+          "path": "js/lang/python/xlibs/index.js",
+          "kind": "import-statement",
+          "original": "./xlibs/index.js"
+        },
+        {
+          "path": "js/lang/error/index.js",
+          "kind": "import-statement",
+          "original": "../error/index.js"
+        },
+        {
+          "path": "js/lang/python/standard-prelude.js",
+          "kind": "import-statement",
+          "original": "./standard-prelude.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/lang/analysis.js": {
+      "bytes": 209,
+      "imports": [],
+      "format": "esm"
+    },
+    "js/lang/lang-worker.js": {
+      "bytes": 2281,
+      "imports": [
+        {
+          "path": "js/lang/cie/index.js",
+          "kind": "import-statement",
+          "original": "./cie/index.js"
+        },
+        {
+          "path": "js/lang/python/index.js",
+          "kind": "import-statement",
+          "original": "./python/index.js"
+        },
+        {
+          "path": "js/lang/analysis.js",
+          "kind": "import-statement",
+          "original": "./analysis.js"
+        },
+        {
+          "path": "js/lang/error/index.js",
+          "kind": "import-statement",
+          "original": "./error/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ui/base.js": {
+      "bytes": 490,
+      "imports": [
+        {
+          "path": "https://cdn.jsdelivr.net/npm/@preact/signals@2.9.1/+esm",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "https://cdn.jsdelivr.net/npm/preact@10.29.2/hooks/+esm",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ui/my-preact.js": {
+      "bytes": 496,
+      "imports": [
+        {
+          "path": "https://cdn.jsdelivr.net/npm/preact@10.29.2/+esm",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "https://cdn.jsdelivr.net/npm/htm@3.1.1/+esm",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "https://cdn.jsdelivr.net/npm/@preact/signals@2.9.1/+esm",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "https://cdn.jsdelivr.net/npm/preact@10.29.2/hooks/+esm",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "js/ui/base.js",
+          "kind": "import-statement",
+          "original": "./base.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/build-config.js": {
+      "bytes": 178,
+      "imports": [],
+      "format": "esm"
+    },
+    "js/util/config.js": {
+      "bytes": 64,
+      "imports": [
+        {
+          "path": "js/build-config.js",
+          "kind": "import-statement",
+          "original": "../build-config.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/util/assert.js": {
+      "bytes": 337,
+      "imports": [],
+      "format": "esm"
+    },
+    "js/util/string.js": {
+      "bytes": 813,
+      "imports": [],
+      "format": "esm"
+    },
+    "js/util/array.js": {
+      "bytes": 217,
+      "imports": [],
+      "format": "esm"
+    },
+    "js/util/url.js": {
+      "bytes": 1798,
+      "imports": [
+        {
+          "path": "js/util/config.js",
+          "kind": "import-statement",
+          "original": "./config.js"
+        },
+        {
+          "path": "js/util/string.js",
+          "kind": "import-statement",
+          "original": "./string.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/util/events/ListenerList.js": {
+      "bytes": 634,
+      "imports": [],
+      "format": "esm"
+    },
+    "js/util/events/ListenerMap.js": {
+      "bytes": 1065,
+      "imports": [],
+      "format": "esm"
+    },
+    "js/util/events/index.js": {
+      "bytes": 98,
+      "imports": [
+        {
+          "path": "js/util/events/ListenerList.js",
+          "kind": "import-statement",
+          "original": "./ListenerList.js"
+        },
+        {
+          "path": "js/util/events/ListenerMap.js",
+          "kind": "import-statement",
+          "original": "./ListenerMap.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/util/dom.js": {
+      "bytes": 1720,
+      "imports": [
+        {
+          "path": "https://cdn.jsdelivr.net/npm/preact@10.29.2/+esm",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "js/util/events/index.js",
+          "kind": "import-statement",
+          "original": "./events/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/util/image.js": {
+      "bytes": 202,
+      "imports": [],
+      "format": "esm"
+    },
+    "js/util/Locale.js": {
+      "bytes": 676,
+      "imports": [],
+      "format": "esm"
+    },
+    "js/util/client.js": {
+      "bytes": 1496,
+      "imports": [
+        {
+          "path": "js/util/dom.js",
+          "kind": "import-statement",
+          "original": "./dom.js"
+        },
+        {
+          "path": "js/util/Locale.js",
+          "kind": "import-statement",
+          "original": "./Locale.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/util/clipboard.js": {
+      "bytes": 680,
+      "imports": [
+        {
+          "path": "js/util/events/ListenerList.js",
+          "kind": "import-statement",
+          "original": "./events/ListenerList.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/util/time.js": {
+      "bytes": 4037,
+      "imports": [],
+      "format": "esm"
+    },
+    "js/util/scripts.js": {
+      "bytes": 1124,
+      "imports": [],
+      "format": "esm"
+    },
+    "js/util/net/TextStreamer.js": {
+      "bytes": 1176,
+      "imports": [],
+      "format": "esm"
+    },
+    "js/util/net/Remote.js": {
+      "bytes": 1715,
+      "imports": [
+        {
+          "path": "js/util/url.js",
+          "kind": "import-statement",
+          "original": "../url.js"
+        },
+        {
+          "path": "js/util/net/TextStreamer.js",
+          "kind": "import-statement",
+          "original": "./TextStreamer.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/util/net/index.js": {
+      "bytes": 123,
+      "imports": [
+        {
+          "path": "js/util/net/Remote.js",
+          "kind": "import-statement",
+          "original": "./Remote.js"
+        },
+        {
+          "path": "js/util/net/TextStreamer.js",
+          "kind": "import-statement",
+          "original": "./TextStreamer.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/util/ClassNames.js": {
+      "bytes": 335,
+      "imports": [],
+      "format": "esm"
+    },
+    "js/util/index.js": {
+      "bytes": 769,
+      "imports": [
+        {
+          "path": "js/util/config.js",
+          "kind": "import-statement",
+          "original": "./config.js"
+        },
+        {
+          "path": "js/util/assert.js",
+          "kind": "import-statement",
+          "original": "./assert.js"
+        },
+        {
+          "path": "js/util/string.js",
+          "kind": "import-statement",
+          "original": "./string.js"
+        },
+        {
+          "path": "js/util/array.js",
+          "kind": "import-statement",
+          "original": "./array.js"
+        },
+        {
+          "path": "js/util/url.js",
+          "kind": "import-statement",
+          "original": "./url.js"
+        },
+        {
+          "path": "js/util/dom.js",
+          "kind": "import-statement",
+          "original": "./dom.js"
+        },
+        {
+          "path": "js/util/image.js",
+          "kind": "import-statement",
+          "original": "./image.js"
+        },
+        {
+          "path": "js/util/client.js",
+          "kind": "import-statement",
+          "original": "./client.js"
+        },
+        {
+          "path": "js/util/clipboard.js",
+          "kind": "import-statement",
+          "original": "./clipboard.js"
+        },
+        {
+          "path": "js/util/time.js",
+          "kind": "import-statement",
+          "original": "./time.js"
+        },
+        {
+          "path": "js/util/events/index.js",
+          "kind": "import-statement",
+          "original": "./events/index.js"
+        },
+        {
+          "path": "js/util/scripts.js",
+          "kind": "import-statement",
+          "original": "./scripts.js"
+        },
+        {
+          "path": "js/util/net/index.js",
+          "kind": "import-statement",
+          "original": "./net/index.js"
+        },
+        {
+          "path": "js/util/ClassNames.js",
+          "kind": "import-statement",
+          "original": "./ClassNames.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ui/styles.js": {
+      "bytes": 394,
+      "imports": [
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../util/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ui/dialogs/DialogModel.js": {
+      "bytes": 673,
+      "imports": [
+        {
+          "path": "js/ui/my-preact.js",
+          "kind": "import-statement",
+          "original": "../my-preact.js"
+        },
+        {
+          "path": "js/util/events/index.js",
+          "kind": "import-statement",
+          "original": "../../util/events/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ui/Button.js": {
+      "bytes": 579,
+      "imports": [
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../ui/index.js"
+        },
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../util/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ui/dialogs/DialogWindow.js": {
+      "bytes": 1473,
+      "imports": [
+        {
+          "path": "js/ui/my-preact.js",
+          "kind": "import-statement",
+          "original": "../my-preact.js"
+        },
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../../util/index.js"
+        },
+        {
+          "path": "js/ui/Button.js",
+          "kind": "import-statement",
+          "original": "../Button.js"
+        },
+        {
+          "path": "js/ui/dialogs/DialogModel.js",
+          "kind": "import-statement",
+          "original": "./DialogModel.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ui/dialogs/index.js": {
+      "bytes": 98,
+      "imports": [
+        {
+          "path": "js/ui/dialogs/DialogModel.js",
+          "kind": "import-statement",
+          "original": "./DialogModel.js"
+        },
+        {
+          "path": "js/ui/dialogs/DialogWindow.js",
+          "kind": "import-statement",
+          "original": "./DialogWindow.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ai/Tool.js": {
+      "bytes": 1051,
+      "imports": [],
+      "format": "esm"
+    },
+    "js/ai/ToolBox.js": {
+      "bytes": 656,
+      "imports": [
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../util/index.js"
+        },
+        {
+          "path": "js/ai/Tool.js",
+          "kind": "import-statement",
+          "original": "./Tool.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ai/ChatApi.js": {
+      "bytes": 3704,
+      "imports": [
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../util/index.js"
+        },
+        {
+          "path": "js/util/net/index.js",
+          "kind": "import-statement",
+          "original": "../util/net/index.js"
+        },
+        {
+          "path": "js/ai/ToolBox.js",
+          "kind": "import-statement",
+          "original": "./ToolBox.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ai/User.js": {
+      "bytes": 784,
+      "imports": [],
+      "format": "esm"
+    },
+    "js/ai/Message.js": {
+      "bytes": 675,
+      "imports": [
+        {
+          "path": "js/ai/User.js",
+          "kind": "import-statement",
+          "original": "./User.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ai/ToolCalls.js": {
+      "bytes": 1914,
+      "imports": [
+        {
+          "path": "js/ai/ToolBox.js",
+          "kind": "import-statement",
+          "original": "./ToolBox.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ai/Chat.js": {
+      "bytes": 4124,
+      "imports": [
+        {
+          "path": "js/util/events/index.js",
+          "kind": "import-statement",
+          "original": "../util/events/index.js"
+        },
+        {
+          "path": "js/ai/Message.js",
+          "kind": "import-statement",
+          "original": "./Message.js"
+        },
+        {
+          "path": "js/ai/ToolCalls.js",
+          "kind": "import-statement",
+          "original": "./ToolCalls.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/env/FileLayer.js": {
+      "bytes": 2895,
+      "imports": [
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../util/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/env/index.js": {
+      "bytes": 334,
+      "imports": [
+        {
+          "path": "js/env/FileLayer.js",
+          "kind": "import-statement",
+          "original": "./FileLayer.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ai/coreTools.js": {
+      "bytes": 1418,
+      "imports": [
+        {
+          "path": "js/ai/Tool.js",
+          "kind": "import-statement",
+          "original": "./Tool.js"
+        },
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../util/index.js"
+        },
+        {
+          "path": "js/env/index.js",
+          "kind": "import-statement",
+          "original": "../env/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ai/ChatSession.js": {
+      "bytes": 983,
+      "imports": [
+        {
+          "path": "js/ai/Chat.js",
+          "kind": "import-statement",
+          "original": "./Chat.js"
+        },
+        {
+          "path": "js/ai/ChatApi.js",
+          "kind": "import-statement",
+          "original": "./ChatApi.js"
+        },
+        {
+          "path": "js/ai/ToolBox.js",
+          "kind": "import-statement",
+          "original": "./ToolBox.js"
+        },
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../util/index.js"
+        },
+        {
+          "path": "js/ai/coreTools.js",
+          "kind": "import-statement",
+          "original": "./coreTools.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ai/index.js": {
+      "bytes": 332,
+      "imports": [
+        {
+          "path": "js/ai/ChatApi.js",
+          "kind": "import-statement",
+          "original": "./ChatApi.js"
+        },
+        {
+          "path": "js/ai/Chat.js",
+          "kind": "import-statement",
+          "original": "./Chat.js"
+        },
+        {
+          "path": "js/ai/Message.js",
+          "kind": "import-statement",
+          "original": "./Message.js"
+        },
+        {
+          "path": "js/ai/Tool.js",
+          "kind": "import-statement",
+          "original": "./Tool.js"
+        },
+        {
+          "path": "js/ai/ToolBox.js",
+          "kind": "import-statement",
+          "original": "./ToolBox.js"
+        },
+        {
+          "path": "js/ai/User.js",
+          "kind": "import-statement",
+          "original": "./User.js"
+        },
+        {
+          "path": "js/ai/ChatSession.js",
+          "kind": "import-statement",
+          "original": "./ChatSession.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ui/ai/AiChatWindow.js": {
+      "bytes": 2523,
+      "imports": [
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/index.js"
+        },
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../../util/index.js"
+        },
+        {
+          "path": "js/ai/index.js",
+          "kind": "import-statement",
+          "original": "../../ai/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ui/ai/index.js": {
+      "bytes": 77,
+      "imports": [
+        {
+          "path": "js/ui/ai/AiChatWindow.js",
+          "kind": "import-statement",
+          "original": "./AiChatWindow.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ui/stores/notifications.js": {
+      "bytes": 1041,
+      "imports": [],
+      "format": "esm"
+    },
+    "js/ui/stores/AbstractStore.js": {
+      "bytes": 779,
+      "imports": [
+        {
+          "path": "js/ui/stores/notifications.js",
+          "kind": "import-statement",
+          "original": "./notifications.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ui/stores/Primitive.js": {
+      "bytes": 786,
+      "imports": [
+        {
+          "path": "js/ui/stores/notifications.js",
+          "kind": "import-statement",
+          "original": "./notifications.js"
+        },
+        {
+          "path": "js/ui/stores/AbstractStore.js",
+          "kind": "import-statement",
+          "original": "./AbstractStore.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ui/stores/Computed.js": {
+      "bytes": 874,
+      "imports": [
+        {
+          "path": "js/ui/stores/notifications.js",
+          "kind": "import-statement",
+          "original": "./notifications.js"
+        },
+        {
+          "path": "js/ui/stores/AbstractStore.js",
+          "kind": "import-statement",
+          "original": "./AbstractStore.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ui/stores/index.js": {
+      "bytes": 301,
+      "imports": [
+        {
+          "path": "js/ui/stores/Primitive.js",
+          "kind": "import-statement",
+          "original": "./Primitive.js"
+        },
+        {
+          "path": "js/ui/stores/Computed.js",
+          "kind": "import-statement",
+          "original": "./Computed.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/lang/cie/editor/ace-cie.js": {
+      "bytes": 5211,
+      "imports": []
+    },
+    "js/lang/cie/editor/index.js": {
+      "bytes": 23,
+      "imports": [
+        {
+          "path": "js/lang/cie/editor/ace-cie.js",
+          "kind": "import-statement",
+          "original": "./ace-cie.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/graph/Style.js": {
+      "bytes": 508,
+      "imports": [],
+      "format": "esm"
+    },
+    "js/math-util/Pt2D.js": {
+      "bytes": 1664,
+      "imports": [],
+      "format": "esm"
+    },
+    "js/math-util/Angle.js": {
+      "bytes": 1087,
+      "imports": [],
+      "format": "esm"
+    },
+    "js/math-util/Mat3D.js": {
+      "bytes": 1932,
+      "imports": [
+        {
+          "path": "js/math-util/Pt2D.js",
+          "kind": "import-statement",
+          "original": "./Pt2D.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/math-util/index.js": {
+      "bytes": 138,
+      "imports": [
+        {
+          "path": "js/math-util/Pt2D.js",
+          "kind": "import-statement",
+          "original": "./Pt2D.js"
+        },
+        {
+          "path": "js/math-util/Angle.js",
+          "kind": "import-statement",
+          "original": "./Angle.js"
+        },
+        {
+          "path": "js/math-util/Mat3D.js",
+          "kind": "import-statement",
+          "original": "./Mat3D.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/graph/Pen.js": {
+      "bytes": 512,
+      "imports": [
+        {
+          "path": "js/math-util/index.js",
+          "kind": "import-statement",
+          "original": "../math-util/index.js"
+        },
+        {
+          "path": "js/graph/Style.js",
+          "kind": "import-statement",
+          "original": "./Style.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/graph/turtle/State.js": {
+      "bytes": 952,
+      "imports": [
+        {
+          "path": "js/math-util/index.js",
+          "kind": "import-statement",
+          "original": "../../math-util/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/graph/turtle/Turtle.js": {
+      "bytes": 2609,
+      "imports": [
+        {
+          "path": "js/math-util/index.js",
+          "kind": "import-statement",
+          "original": "../../math-util/index.js"
+        },
+        {
+          "path": "js/graph/turtle/State.js",
+          "kind": "import-statement",
+          "original": "./State.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/graph/turtle/TurtleManager.js": {
+      "bytes": 1817,
+      "imports": [
+        {
+          "path": "js/graph/turtle/Turtle.js",
+          "kind": "import-statement",
+          "original": "./Turtle.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/graph/turtle/index.js": {
+      "bytes": 80,
+      "imports": [
+        {
+          "path": "js/graph/turtle/TurtleManager.js",
+          "kind": "import-statement",
+          "original": "./TurtleManager.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/graph/Graph.js": {
+      "bytes": 6800,
+      "imports": [
+        {
+          "path": "js/math-util/Pt2D.js",
+          "kind": "import-statement",
+          "original": "../math-util/Pt2D.js"
+        },
+        {
+          "path": "js/math-util/Mat3D.js",
+          "kind": "import-statement",
+          "original": "../math-util/Mat3D.js"
+        },
+        {
+          "path": "js/graph/turtle/index.js",
+          "kind": "import-statement",
+          "original": "./turtle/index.js"
+        },
+        {
+          "path": "js/graph/Style.js",
+          "kind": "import-statement",
+          "original": "./Style.js"
+        },
+        {
+          "path": "js/graph/Pen.js",
+          "kind": "import-statement",
+          "original": "./Pen.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/graph/index.js": {
+      "bytes": 136,
+      "imports": [
+        {
+          "path": "js/graph/Style.js",
+          "kind": "import-statement",
+          "original": "./Style.js"
+        },
+        {
+          "path": "js/graph/Pen.js",
+          "kind": "import-statement",
+          "original": "./Pen.js"
+        },
+        {
+          "path": "js/graph/Graph.js",
+          "kind": "import-statement",
+          "original": "./Graph.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/lang/userenv/UserEnv.js": {
+      "bytes": 2457,
+      "imports": [
+        {
+          "path": "js/lang/error/UserCodeError.js",
+          "kind": "import-statement",
+          "original": "../error/UserCodeError.js"
+        },
+        {
+          "path": "js/graph/index.js",
+          "kind": "import-statement",
+          "original": "../../graph/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/lang/userenv/index.js": {
+      "bytes": 40,
+      "imports": [
+        {
+          "path": "js/lang/userenv/UserEnv.js",
+          "kind": "import-statement",
+          "original": "./UserEnv.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/lang/index.js": {
+      "bytes": 3127,
+      "imports": [
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../util/index.js"
+        },
+        {
+          "path": "js/lang/error/index.js",
+          "kind": "import-statement",
+          "original": "./error/index.js"
+        },
+        {
+          "path": "js/lang/userenv/index.js",
+          "kind": "import-statement",
+          "original": "./userenv/index.js"
+        },
+        {
+          "path": "js/lang/analysis.js",
+          "kind": "import-statement",
+          "original": "./analysis.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ui/SelectInput.js": {
+      "bytes": 1536,
+      "imports": [
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../ui/index.js"
+        },
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../util/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ui/text-editor/TextEditor.js": {
+      "bytes": 7182,
+      "imports": [
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/index.js"
+        },
+        {
+          "path": "https://cdn.jsdelivr.net/npm/ace-builds@1.44.0/src-min-noconflict/ace.min.js",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "js/lang/cie/editor/index.js",
+          "kind": "import-statement",
+          "original": "../../lang/cie/editor/index.js"
+        },
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../../util/index.js"
+        },
+        {
+          "path": "js/ui/styles.js",
+          "kind": "import-statement",
+          "original": "../../ui/styles.js"
+        },
+        {
+          "path": "js/lang/index.js",
+          "kind": "import-statement",
+          "original": "../../lang/index.js"
+        },
+        {
+          "path": "js/env/index.js",
+          "kind": "import-statement",
+          "original": "../../env/index.js"
+        },
+        {
+          "path": "js/ui/Button.js",
+          "kind": "import-statement",
+          "original": "../Button.js"
+        },
+        {
+          "path": "js/ui/SelectInput.js",
+          "kind": "import-statement",
+          "original": "../SelectInput.js"
+        },
+        {
+          "path": "js/ui/dialogs/index.js",
+          "kind": "import-statement",
+          "original": "../dialogs/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ui/text-editor/index.js": {
+      "bytes": 71,
+      "imports": [
+        {
+          "path": "js/ui/text-editor/TextEditor.js",
+          "kind": "import-statement",
+          "original": "./TextEditor.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ui/text-terminal/TeletypeLine.js": {
+      "bytes": 1603,
+      "imports": [],
+      "format": "esm"
+    },
+    "js/ui/text-terminal/TeletypeEvent.js": {
+      "bytes": 128,
+      "imports": [],
+      "format": "esm"
+    },
+    "js/ui/text-terminal/Teletype.js": {
+      "bytes": 2530,
+      "imports": [
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../../util/index.js"
+        },
+        {
+          "path": "js/util/events/index.js",
+          "kind": "import-statement",
+          "original": "../../util/events/index.js"
+        },
+        {
+          "path": "js/ui/text-terminal/TeletypeLine.js",
+          "kind": "import-statement",
+          "original": "./TeletypeLine.js"
+        },
+        {
+          "path": "js/ui/text-terminal/TeletypeEvent.js",
+          "kind": "import-statement",
+          "original": "./TeletypeEvent.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ui/text-terminal/TextTerminalLine.js": {
+      "bytes": 1158,
+      "imports": [
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/index.js"
+        },
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../../util/index.js"
+        },
+        {
+          "path": "js/ui/styles.js",
+          "kind": "import-statement",
+          "original": "../../ui/styles.js"
+        },
+        {
+          "path": "js/ui/text-terminal/Teletype.js",
+          "kind": "import-statement",
+          "original": "./Teletype.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ui/dynamic-canvas/DynamicCanvas.js": {
+      "bytes": 3588,
+      "imports": [
+        {
+          "path": "js/ui/my-preact.js",
+          "kind": "import-statement",
+          "original": "../../ui/my-preact.js"
+        },
+        {
+          "path": "js/ui/styles.js",
+          "kind": "import-statement",
+          "original": "../../ui/styles.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ui/dynamic-canvas/CanvasController.js": {
+      "bytes": 304,
+      "imports": [
+        {
+          "path": "js/util/events/index.js",
+          "kind": "import-statement",
+          "original": "../../util/events/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ui/dynamic-canvas/index.js": {
+      "bytes": 110,
+      "imports": [
+        {
+          "path": "js/ui/dynamic-canvas/DynamicCanvas.js",
+          "kind": "import-statement",
+          "original": "./DynamicCanvas.js"
+        },
+        {
+          "path": "js/ui/dynamic-canvas/CanvasController.js",
+          "kind": "import-statement",
+          "original": "./CanvasController.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ui/text-terminal/TextTerminal.js": {
+      "bytes": 4751,
+      "imports": [
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/index.js"
+        },
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../../util/index.js"
+        },
+        {
+          "path": "js/ui/styles.js",
+          "kind": "import-statement",
+          "original": "../../ui/styles.js"
+        },
+        {
+          "path": "js/ui/text-terminal/Teletype.js",
+          "kind": "import-statement",
+          "original": "./Teletype.js"
+        },
+        {
+          "path": "js/ui/text-terminal/TextTerminalLine.js",
+          "kind": "import-statement",
+          "original": "./TextTerminalLine.js"
+        },
+        {
+          "path": "js/ui/dynamic-canvas/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/dynamic-canvas/index.js"
+        },
+        {
+          "path": "js/graph/index.js",
+          "kind": "import-statement",
+          "original": "../../graph/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ui/text-terminal/index.js": {
+      "bytes": 92,
+      "imports": [
+        {
+          "path": "js/ui/text-terminal/Teletype.js",
+          "kind": "import-statement",
+          "original": "./Teletype.js"
+        },
+        {
+          "path": "js/ui/text-terminal/TextTerminal.js",
+          "kind": "import-statement",
+          "original": "./TextTerminal.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ui/sandbox/Sandbox.js": {
+      "bytes": 5762,
+      "imports": [
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/index.js"
+        },
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../../util/index.js"
+        },
+        {
+          "path": "js/ui/styles.js",
+          "kind": "import-statement",
+          "original": "../../ui/styles.js"
+        },
+        {
+          "path": "js/ui/ai/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/ai/index.js"
+        },
+        {
+          "path": "js/lang/index.js",
+          "kind": "import-statement",
+          "original": "../../lang/index.js"
+        },
+        {
+          "path": "js/env/index.js",
+          "kind": "import-statement",
+          "original": "../../env/index.js"
+        },
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/index.js"
+        },
+        {
+          "path": "js/ui/text-terminal/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/text-terminal/index.js"
+        },
+        {
+          "path": "js/ui/dialogs/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/dialogs/index.js"
+        },
+        {
+          "path": "js/math-util/index.js",
+          "kind": "import-statement",
+          "original": "../../math-util/index.js"
+        },
+        {
+          "path": "js/graph/index.js",
+          "kind": "import-statement",
+          "original": "../../graph/index.js"
+        },
+        {
+          "path": "js/ai/index.js",
+          "kind": "import-statement",
+          "original": "../../ai/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ui/sandbox/index.js": {
+      "bytes": 40,
+      "imports": [
+        {
+          "path": "js/ui/sandbox/Sandbox.js",
+          "kind": "import-statement",
+          "original": "./Sandbox.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ui/TextInput.js": {
+      "bytes": 914,
+      "imports": [
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../ui/index.js"
+        },
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../util/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ui/IconButton.js": {
+      "bytes": 382,
+      "imports": [
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../ui/index.js"
+        },
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../util/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ui/index.js": {
+      "bytes": 599,
+      "imports": [
+        {
+          "path": "js/ui/my-preact.js",
+          "kind": "import-statement",
+          "original": "./my-preact.js"
+        },
+        {
+          "path": "js/ui/styles.js",
+          "kind": "import-statement",
+          "original": "./styles.js"
+        },
+        {
+          "path": "js/ui/dialogs/index.js",
+          "kind": "import-statement",
+          "original": "./dialogs/index.js"
+        },
+        {
+          "path": "js/ui/ai/index.js",
+          "kind": "import-statement",
+          "original": "./ai/index.js"
+        },
+        {
+          "path": "js/ui/stores/index.js",
+          "kind": "import-statement",
+          "original": "./stores/index.js"
+        },
+        {
+          "path": "js/ui/text-editor/index.js",
+          "kind": "import-statement",
+          "original": "./text-editor/index.js"
+        },
+        {
+          "path": "js/ui/text-terminal/index.js",
+          "kind": "import-statement",
+          "original": "./text-terminal/index.js"
+        },
+        {
+          "path": "js/ui/sandbox/index.js",
+          "kind": "import-statement",
+          "original": "./sandbox/index.js"
+        },
+        {
+          "path": "js/ui/dynamic-canvas/index.js",
+          "kind": "import-statement",
+          "original": "./dynamic-canvas/index.js"
+        },
+        {
+          "path": "js/ui/Button.js",
+          "kind": "import-statement",
+          "original": "./Button.js"
+        },
+        {
+          "path": "js/ui/TextInput.js",
+          "kind": "import-statement",
+          "original": "./TextInput.js"
+        },
+        {
+          "path": "js/ui/SelectInput.js",
+          "kind": "import-statement",
+          "original": "./SelectInput.js"
+        },
+        {
+          "path": "js/ui/IconButton.js",
+          "kind": "import-statement",
+          "original": "./IconButton.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/applets/convolution-editor/ConvolutionEditor.js": {
+      "bytes": 5185,
+      "imports": [
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/index.js"
+        },
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../../util/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/applets/convolution-editor/index.js": {
+      "bytes": 245,
+      "imports": [
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/index.js"
+        },
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../../util/index.js"
+        },
+        {
+          "path": "js/applets/convolution-editor/ConvolutionEditor.js",
+          "kind": "import-statement",
+          "original": "./ConvolutionEditor.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/applets/geogebra/Geogebra.js": {
+      "bytes": 1278,
+      "imports": [
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/index.js"
+        },
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../../util/index.js"
+        },
+        {
+          "path": "js/ui/styles.js",
+          "kind": "import-statement",
+          "original": "../../ui/styles.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/applets/geogebra/index.js": {
+      "bytes": 126,
+      "imports": [
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../../util/index.js"
+        },
+        {
+          "path": "js/applets/geogebra/Geogebra.js",
+          "kind": "import-statement",
+          "original": "./Geogebra.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/applets/lesson-starter/LessonStarter.js": {
+      "bytes": 4307,
+      "imports": [
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/index.js"
+        },
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../../util/index.js"
+        },
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/index.js"
+        },
+        {
+          "path": "js/ui/dialogs/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/dialogs/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/applets/lesson-starter/index.js": {
+      "bytes": 147,
+      "imports": [
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../../util/index.js"
+        },
+        {
+          "path": "js/applets/lesson-starter/LessonStarter.js",
+          "kind": "import-statement",
+          "original": "./LessonStarter.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/applets/minide/Minide.js": {
+      "bytes": 1485,
+      "imports": [
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/index.js"
+        },
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../../util/index.js"
+        },
+        {
+          "path": "js/ui/text-editor/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/text-editor/index.js"
+        },
+        {
+          "path": "js/ui/sandbox/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/sandbox/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/applets/minide/index.js": {
+      "bytes": 189,
+      "imports": [
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../../util/index.js"
+        },
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/index.js"
+        },
+        {
+          "path": "js/applets/minide/Minide.js",
+          "kind": "import-statement",
+          "original": "./Minide.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/applets/python-golf/PythonGolf.js": {
+      "bytes": 929,
+      "imports": [
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/index.js"
+        },
+        {
+          "path": "js/applets/minide/Minide.js",
+          "kind": "import-statement",
+          "original": "../../applets/minide/Minide.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/applets/python-golf/index.js": {
+      "bytes": 210,
+      "imports": [
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/index.js"
+        },
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../../util/index.js"
+        },
+        {
+          "path": "js/applets/python-golf/PythonGolf.js",
+          "kind": "import-statement",
+          "original": "./PythonGolf.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/applets/question-selector/QuestionSelector.js": {
+      "bytes": 930,
+      "imports": [
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/index.js"
+        },
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../../util/index.js"
+        },
+        {
+          "path": "js/ui/styles.js",
+          "kind": "import-statement",
+          "original": "../../ui/styles.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/applets/question-selector/index.js": {
+      "bytes": 159,
+      "imports": [
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../../util/index.js"
+        },
+        {
+          "path": "js/applets/question-selector/QuestionSelector.js",
+          "kind": "import-statement",
+          "original": "./QuestionSelector.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/applets/sandbox/index.js": {
+      "bytes": 134,
+      "imports": [
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../../util/index.js"
+        },
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ui/list-search/SearchCandidate.js": {
+      "bytes": 995,
+      "imports": [
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../../util/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ui/list-search/SearchResult.js": {
+      "bytes": 187,
+      "imports": [
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../../util/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ui/list-search/ListSearch.js": {
+      "bytes": 3426,
+      "imports": [
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/index.js"
+        },
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../../util/index.js"
+        },
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/index.js"
+        },
+        {
+          "path": "js/ui/list-search/SearchCandidate.js",
+          "kind": "import-statement",
+          "original": "./SearchCandidate.js"
+        },
+        {
+          "path": "js/ui/list-search/SearchResult.js",
+          "kind": "import-statement",
+          "original": "./SearchResult.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/ui/list-search/index.js": {
+      "bytes": 46,
+      "imports": [
+        {
+          "path": "js/ui/list-search/ListSearch.js",
+          "kind": "import-statement",
+          "original": "./ListSearch.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/applets/searchbar/SearchBar.js": {
+      "bytes": 3868,
+      "imports": [
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/index.js"
+        },
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../../util/index.js"
+        },
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/index.js"
+        },
+        {
+          "path": "js/ui/stores/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/stores/index.js"
+        },
+        {
+          "path": "js/ui/list-search/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/list-search/index.js"
+        },
+        {
+          "path": "js/ui/dialogs/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/dialogs/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/applets/searchbar/index.js": {
+      "bytes": 204,
+      "imports": [
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../../util/index.js"
+        },
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/index.js"
+        },
+        {
+          "path": "js/applets/searchbar/SearchBar.js",
+          "kind": "import-statement",
+          "original": "./SearchBar.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/applets/text-editor/index.js": {
+      "bytes": 144,
+      "imports": [
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../../util/index.js"
+        },
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/applets/text-terminal/index.js": {
+      "bytes": 150,
+      "imports": [
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../../util/index.js"
+        },
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/applets/videpo/vdb.js": {
+      "bytes": 427,
+      "imports": [
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../../util/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/applets/videpo/Unit.js": {
+      "bytes": 1053,
+      "imports": [
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../../util/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/applets/videpo/MediaPlayer.js": {
+      "bytes": 2530,
+      "imports": [
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/index.js"
+        },
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../../util/index.js"
+        },
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/index.js"
+        },
+        {
+          "path": "js/ai/index.js",
+          "kind": "import-statement",
+          "original": "../../ai/index.js"
+        },
+        {
+          "path": "js/applets/videpo/Unit.js",
+          "kind": "import-statement",
+          "original": "./Unit.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/applets/videpo/CategorySelector.js": {
+      "bytes": 1417,
+      "imports": [
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/index.js"
+        },
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../../util/index.js"
+        },
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/index.js"
+        },
+        {
+          "path": "js/ai/index.js",
+          "kind": "import-statement",
+          "original": "../../ai/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/applets/videpo/Videpo.js": {
+      "bytes": 7841,
+      "imports": [
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/index.js"
+        },
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../../util/index.js"
+        },
+        {
+          "path": "js/ui/index.js",
+          "kind": "import-statement",
+          "original": "../../ui/index.js"
+        },
+        {
+          "path": "js/ai/index.js",
+          "kind": "import-statement",
+          "original": "../../ai/index.js"
+        },
+        {
+          "path": "js/applets/videpo/vdb.js",
+          "kind": "import-statement",
+          "original": "./vdb.js"
+        },
+        {
+          "path": "js/applets/videpo/Unit.js",
+          "kind": "import-statement",
+          "original": "./Unit.js"
+        },
+        {
+          "path": "js/applets/videpo/MediaPlayer.js",
+          "kind": "import-statement",
+          "original": "./MediaPlayer.js"
+        },
+        {
+          "path": "js/applets/videpo/CategorySelector.js",
+          "kind": "import-statement",
+          "original": "./CategorySelector.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "js/applets/videpo/index.js": {
+      "bytes": 118,
+      "imports": [
+        {
+          "path": "js/util/index.js",
+          "kind": "import-statement",
+          "original": "../../util/index.js"
+        },
+        {
+          "path": "js/applets/videpo/Videpo.js",
+          "kind": "import-statement",
+          "original": "./Videpo.js"
+        }
+      ],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "artifacts/UPDON2X7.js": {
+      "imports": [
+        {
+          "path": "artifacts/chunks/ZFPXU6SY.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "artifacts/chunks/F7WQ4MB3.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "SearchBar"
+      ],
+      "entryPoint": "js/applets/searchbar/index.js",
+      "inputs": {
+        "js/ui/list-search/SearchCandidate.js": {
+          "bytesInOutput": 402
+        },
+        "js/ui/list-search/SearchResult.js": {
+          "bytesInOutput": 61
+        },
+        "js/ui/list-search/ListSearch.js": {
+          "bytesInOutput": 1350
+        },
+        "js/ui/list-search/index.js": {
+          "bytesInOutput": 0
+        },
+        "js/applets/searchbar/SearchBar.js": {
+          "bytesInOutput": 1806
+        },
+        "js/applets/searchbar/index.js": {
+          "bytesInOutput": 29
+        }
+      },
+      "bytes": 3812
+    },
+    "artifacts/UZH4DRL5.js": {
+      "imports": [
+        {
+          "path": "artifacts/chunks/ZFPXU6SY.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "artifacts/chunks/F7WQ4MB3.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [],
+      "entryPoint": "js/applets/text-editor/index.js",
+      "inputs": {
+        "js/applets/text-editor/index.js": {
+          "bytesInOutput": 42
+        }
+      },
+      "bytes": 120
+    },
+    "artifacts/5ZXJMWOX.js": {
+      "imports": [
+        {
+          "path": "artifacts/chunks/ZFPXU6SY.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "artifacts/chunks/F7WQ4MB3.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [],
+      "entryPoint": "js/applets/text-terminal/index.js",
+      "inputs": {
+        "js/applets/text-terminal/index.js": {
+          "bytesInOutput": 46
+        }
+      },
+      "bytes": 124
+    },
+    "artifacts/T3ZRKWY7.js": {
+      "imports": [
+        {
+          "path": "artifacts/chunks/ZFPXU6SY.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "artifacts/chunks/F7WQ4MB3.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [],
+      "entryPoint": "js/applets/videpo/index.js",
+      "inputs": {
+        "js/applets/videpo/vdb.js": {
+          "bytesInOutput": 182
+        },
+        "js/applets/videpo/Unit.js": {
+          "bytesInOutput": 578
+        },
+        "js/applets/videpo/MediaPlayer.js": {
+          "bytesInOutput": 1539
+        },
+        "js/applets/videpo/CategorySelector.js": {
+          "bytesInOutput": 569
+        },
+        "js/applets/videpo/Videpo.js": {
+          "bytesInOutput": 3723
+        },
+        "js/applets/videpo/index.js": {
+          "bytesInOutput": 26
+        }
+      },
+      "bytes": 6765
+    },
+    "artifacts/IYJVNSUE.js": {
+      "imports": [
+        {
+          "path": "artifacts/chunks/F7WQ4MB3.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "runUserCode"
+      ],
+      "entryPoint": "js/lang/lang-worker.js",
+      "inputs": {
+        "js/lang/cie/tokeniser/Token.js": {
+          "bytesInOutput": 240
+        },
+        "js/lang/cie/error/index.js": {
+          "bytesInOutput": 0
+        },
+        "js/lang/cie/tokeniser/Lexer.js": {
+          "bytesInOutput": 639
+        },
+        "js/lang/cie/tokeniser/Tokeniser.js": {
+          "bytesInOutput": 1472
+        },
+        "js/lang/cie/tokeniser/TokenReader.js": {
+          "bytesInOutput": 609
+        },
+        "js/lang/cie/tokeniser/index.js": {
+          "bytesInOutput": 69
+        },
+        "js/lang/cie/parser/Node.js": {
+          "bytesInOutput": 767
+        },
+        "js/lang/cie/types/AbstractType.js": {
+          "bytesInOutput": 236
+        },
+        "js/lang/cie/types/PrimitiveType.js": {
+          "bytesInOutput": 575
+        },
+        "js/lang/cie/types/ArrayType.js": {
+          "bytesInOutput": 792
+        },
+        "js/lang/cie/types/Dimension.js": {
+          "bytesInOutput": 97
+        },
+        "js/lang/cie/types/RecordType.js": {
+          "bytesInOutput": 568
+        },
+        "js/lang/cie/types/index.js": {
+          "bytesInOutput": 609
+        },
+        "js/lang/cie/runtime/VmValue.js": {
+          "bytesInOutput": 2537
+        },
+        "js/lang/cie/runtime/VmInstruction.js": {
+          "bytesInOutput": 206
+        },
+        "js/lang/cie/runtime/VmFunction.js": {
+          "bytesInOutput": 1321
+        },
+        "js/lang/cie/runtime/VmVariable.js": {
+          "bytesInOutput": 516
+        },
+        "js/lang/cie/runtime/VmScope.js": {
+          "bytesInOutput": 4700
+        },
+        "js/lang/cie/runtime/Vm.js": {
+          "bytesInOutput": 402
+        },
+        "js/lang/cie/parser/Parser.js": {
+          "bytesInOutput": 9189
+        },
+        "js/lang/cie/parser/index.js": {
+          "bytesInOutput": 40
+        },
+        "js/lang/cie/compiler/Compiler.js": {
+          "bytesInOutput": 1805
+        },
+        "js/lang/cie/compiler/index.js": {
+          "bytesInOutput": 81
+        },
+        "js/lang/cie/index.js": {
+          "bytesInOutput": 286
+        },
+        "js/lang/python/skulpt/skulpt.js": {
+          "bytesInOutput": 563161
+        },
+        "js/lang/python/skulpt/skulpt-stdlib.js": {
+          "bytesInOutput": 397480
+        },
+        "js/lang/python/xlibs/io.js": {
+          "bytesInOutput": 1150
+        },
+        "js/lang/python/xlibs/index.js": {
+          "bytesInOutput": 0
+        },
+        "js/lang/python/standard-prelude.js": {
+          "bytesInOutput": 3640
+        },
+        "js/lang/python/index.js": {
+          "bytesInOutput": 1205
+        },
+        "js/lang/lang-worker.js": {
+          "bytesInOutput": 952
+        }
+      },
+      "bytes": 995437
+    },
+    "artifacts/TZNFOKIW.js": {
+      "imports": [
+        {
+          "path": "artifacts/chunks/ZFPXU6SY.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "artifacts/chunks/F7WQ4MB3.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "ConvolutionEditor"
+      ],
+      "entryPoint": "js/applets/convolution-editor/index.js",
+      "inputs": {
+        "js/applets/convolution-editor/ConvolutionEditor.js": {
+          "bytesInOutput": 2557
+        },
+        "js/applets/convolution-editor/index.js": {
+          "bytesInOutput": 38
+        }
+      },
+      "bytes": 2739
+    },
+    "artifacts/OLGJQVJE.js": {
+      "imports": [
+        {
+          "path": "artifacts/chunks/ZFPXU6SY.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "artifacts/chunks/F7WQ4MB3.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [],
+      "entryPoint": "js/applets/geogebra/index.js",
+      "inputs": {
+        "js/applets/geogebra/Geogebra.js": {
+          "bytesInOutput": 568
+        },
+        "js/applets/geogebra/index.js": {
+          "bytesInOutput": 28
+        }
+      },
+      "bytes": 688
+    },
+    "artifacts/VY7TXQSS.js": {
+      "imports": [
+        {
+          "path": "artifacts/chunks/ZFPXU6SY.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "artifacts/chunks/F7WQ4MB3.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [],
+      "entryPoint": "js/applets/lesson-starter/index.js",
+      "inputs": {
+        "js/applets/lesson-starter/LessonStarter.js": {
+          "bytesInOutput": 2115
+        },
+        "js/applets/lesson-starter/index.js": {
+          "bytesInOutput": 34
+        }
+      },
+      "bytes": 2290
+    },
+    "artifacts/SAXNV755.js": {
+      "imports": [
+        {
+          "path": "artifacts/chunks/SBG2PCJP.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "artifacts/chunks/ZFPXU6SY.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "artifacts/chunks/F7WQ4MB3.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "Minide"
+      ],
+      "entryPoint": "js/applets/minide/index.js",
+      "inputs": {
+        "js/applets/minide/index.js": {
+          "bytesInOutput": 26
+        }
+      },
+      "bytes": 158
+    },
+    "artifacts/KE5R4YQ4.js": {
+      "imports": [
+        {
+          "path": "artifacts/chunks/SBG2PCJP.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "artifacts/chunks/ZFPXU6SY.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "artifacts/chunks/F7WQ4MB3.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "PythonGolf"
+      ],
+      "entryPoint": "js/applets/python-golf/index.js",
+      "inputs": {
+        "js/applets/python-golf/PythonGolf.js": {
+          "bytesInOutput": 746
+        },
+        "js/applets/python-golf/index.js": {
+          "bytesInOutput": 31
+        }
+      },
+      "bytes": 920
+    },
+    "artifacts/chunks/SBG2PCJP.js": {
+      "imports": [
+        {
+          "path": "artifacts/chunks/ZFPXU6SY.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "a"
+      ],
+      "inputs": {
+        "js/applets/minide/Minide.js": {
+          "bytesInOutput": 408
+        }
+      },
+      "bytes": 488
+    },
+    "artifacts/6OBRDW2S.js": {
+      "imports": [
+        {
+          "path": "artifacts/chunks/ZFPXU6SY.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "artifacts/chunks/F7WQ4MB3.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [],
+      "entryPoint": "js/applets/question-selector/index.js",
+      "inputs": {
+        "js/applets/question-selector/QuestionSelector.js": {
+          "bytesInOutput": 408
+        },
+        "js/applets/question-selector/index.js": {
+          "bytesInOutput": 37
+        }
+      },
+      "bytes": 537
+    },
+    "artifacts/VPG3CPON.js": {
+      "imports": [
+        {
+          "path": "artifacts/chunks/ZFPXU6SY.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "artifacts/chunks/F7WQ4MB3.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [],
+      "entryPoint": "js/applets/sandbox/index.js",
+      "inputs": {
+        "js/applets/sandbox/index.js": {
+          "bytesInOutput": 35
+        }
+      },
+      "bytes": 113
+    },
+    "artifacts/chunks/ZFPXU6SY.js": {
+      "imports": [
+        {
+          "path": "artifacts/chunks/F7WQ4MB3.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "https://cdn.jsdelivr.net/npm/preact@10.29.2/+esm",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "https://cdn.jsdelivr.net/npm/preact@10.29.2/+esm",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "https://cdn.jsdelivr.net/npm/htm@3.1.1/+esm",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "https://cdn.jsdelivr.net/npm/@preact/signals@2.9.1/+esm",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "https://cdn.jsdelivr.net/npm/preact@10.29.2/hooks/+esm",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "https://cdn.jsdelivr.net/npm/@preact/signals@2.9.1/+esm",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "https://cdn.jsdelivr.net/npm/preact@10.29.2/hooks/+esm",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "https://cdn.jsdelivr.net/npm/ace-builds@1.44.0/src-min-noconflict/ace.min.js",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "exports": [
+        "A",
+        "B",
+        "C",
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "u",
+        "v",
+        "w",
+        "x",
+        "y",
+        "z"
+      ],
+      "inputs": {
+        "js/util/dom.js": {
+          "bytesInOutput": 921
+        },
+        "js/util/events/ListenerList.js": {
+          "bytesInOutput": 307
+        },
+        "js/util/events/index.js": {
+          "bytesInOutput": 0
+        },
+        "js/util/events/ListenerMap.js": {
+          "bytesInOutput": 438
+        },
+        "js/util/config.js": {
+          "bytesInOutput": 30
+        },
+        "js/build-config.js": {
+          "bytesInOutput": 108
+        },
+        "js/util/assert.js": {
+          "bytesInOutput": 243
+        },
+        "js/util/index.js": {
+          "bytesInOutput": 92
+        },
+        "js/util/string.js": {
+          "bytesInOutput": 540
+        },
+        "js/util/url.js": {
+          "bytesInOutput": 844
+        },
+        "js/util/image.js": {
+          "bytesInOutput": 136
+        },
+        "js/util/client.js": {
+          "bytesInOutput": 706
+        },
+        "js/util/Locale.js": {
+          "bytesInOutput": 336
+        },
+        "js/util/clipboard.js": {
+          "bytesInOutput": 409
+        },
+        "js/util/time.js": {
+          "bytesInOutput": 1973
+        },
+        "js/util/scripts.js": {
+          "bytesInOutput": 544
+        },
+        "js/util/net/index.js": {
+          "bytesInOutput": 50
+        },
+        "js/util/net/TextStreamer.js": {
+          "bytesInOutput": 646
+        },
+        "js/util/net/Remote.js": {
+          "bytesInOutput": 784
+        },
+        "js/util/ClassNames.js": {
+          "bytesInOutput": 172
+        },
+        "js/ui/text-editor/index.js": {
+          "bytesInOutput": 36
+        },
+        "js/ui/my-preact.js": {
+          "bytesInOutput": 357
+        },
+        "js/ui/base.js": {
+          "bytesInOutput": 226
+        },
+        "js/ui/index.js": {
+          "bytesInOutput": 0
+        },
+        "js/ui/styles.js": {
+          "bytesInOutput": 211
+        },
+        "js/ui/dialogs/index.js": {
+          "bytesInOutput": 55
+        },
+        "js/ui/dialogs/DialogModel.js": {
+          "bytesInOutput": 164
+        },
+        "js/ui/Button.js": {
+          "bytesInOutput": 296
+        },
+        "js/ui/dialogs/DialogWindow.js": {
+          "bytesInOutput": 776
+        },
+        "js/ai/Tool.js": {
+          "bytesInOutput": 538
+        },
+        "js/ai/ToolBox.js": {
+          "bytesInOutput": 289
+        },
+        "js/ai/ChatApi.js": {
+          "bytesInOutput": 1695
+        },
+        "js/ai/User.js": {
+          "bytesInOutput": 434
+        },
+        "js/ai/Message.js": {
+          "bytesInOutput": 337
+        },
+        "js/ai/ToolCalls.js": {
+          "bytesInOutput": 791
+        },
+        "js/ai/Chat.js": {
+          "bytesInOutput": 2042
+        },
+        "js/env/FileLayer.js": {
+          "bytesInOutput": 1164
+        },
+        "js/env/index.js": {
+          "bytesInOutput": 146
+        },
+        "js/ai/coreTools.js": {
+          "bytesInOutput": 833
+        },
+        "js/ai/ChatSession.js": {
+          "bytesInOutput": 359
+        },
+        "js/ui/ai/AiChatWindow.js": {
+          "bytesInOutput": 1359
+        },
+        "js/ui/stores/index.js": {
+          "bytesInOutput": 160
+        },
+        "js/ui/stores/notifications.js": {
+          "bytesInOutput": 347
+        },
+        "js/ui/stores/AbstractStore.js": {
+          "bytesInOutput": 306
+        },
+        "js/ui/stores/Primitive.js": {
+          "bytesInOutput": 268
+        },
+        "js/ui/stores/Computed.js": {
+          "bytesInOutput": 263
+        },
+        "js/ui/text-terminal/index.js": {
+          "bytesInOutput": 53
+        },
+        "js/ui/text-terminal/TeletypeLine.js": {
+          "bytesInOutput": 657
+        },
+        "js/ui/text-terminal/Teletype.js": {
+          "bytesInOutput": 1082
+        },
+        "js/ui/text-terminal/TextTerminalLine.js": {
+          "bytesInOutput": 423
+        },
+        "js/ui/dynamic-canvas/DynamicCanvas.js": {
+          "bytesInOutput": 1470
+        },
+        "js/ui/dynamic-canvas/index.js": {
+          "bytesInOutput": 0
+        },
+        "js/graph/Style.js": {
+          "bytesInOutput": 264
+        },
+        "js/math-util/Pt2D.js": {
+          "bytesInOutput": 918
+        },
+        "js/math-util/Angle.js": {
+          "bytesInOutput": 450
+        },
+        "js/graph/Pen.js": {
+          "bytesInOutput": 239
+        },
+        "js/graph/turtle/State.js": {
+          "bytesInOutput": 445
+        },
+        "js/graph/turtle/Turtle.js": {
+          "bytesInOutput": 1416
+        },
+        "js/graph/turtle/TurtleManager.js": {
+          "bytesInOutput": 696
+        },
+        "js/graph/Graph.js": {
+          "bytesInOutput": 3300
+        },
+        "js/ui/text-terminal/TextTerminal.js": {
+          "bytesInOutput": 1717
+        },
+        "js/ui/sandbox/index.js": {
+          "bytesInOutput": 33
+        },
+        "js/lang/userenv/UserEnv.js": {
+          "bytesInOutput": 1262
+        },
+        "js/lang/userenv/index.js": {
+          "bytesInOutput": 0
+        },
+        "js/lang/index.js": {
+          "bytesInOutput": 1473
+        },
+        "js/ui/sandbox/Sandbox.js": {
+          "bytesInOutput": 2557
+        },
+        "js/ui/TextInput.js": {
+          "bytesInOutput": 407
+        },
+        "js/ui/SelectInput.js": {
+          "bytesInOutput": 715
+        },
+        "js/ui/text-editor/TextEditor.js": {
+          "bytesInOutput": 3809
+        },
+        "js/lang/cie/editor/ace-cie.js": {
+          "bytesInOutput": 1909
+        }
+      },
+      "bytes": 48322
+    },
+    "artifacts/chunks/F7WQ4MB3.js": {
+      "imports": [],
+      "exports": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "inputs": {
+        "js/lang/error/UserCodeError.js": {
+          "bytesInOutput": 158
+        },
+        "js/lang/error/index.js": {
+          "bytesInOutput": 92
+        },
+        "js/lang/error/Ref.js": {
+          "bytesInOutput": 119
+        },
+        "js/lang/analysis.js": {
+          "bytesInOutput": 131
+        }
+      },
+      "bytes": 641
+    }
+  }
+}
