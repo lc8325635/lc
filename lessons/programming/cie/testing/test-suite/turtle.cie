@@ -1,0 +1,1 @@
+CONSTANT Fred = Rpc("newTurtle")
