@@ -1,0 +1,62 @@
+[
+    {
+        "txt": "Python golf",
+        "url": "python-golf/"
+    },{
+        "txt": "Painting flags",
+        "url": "programming/python/painting-flags/"
+    },{
+        "txt": "Introduction to the Python turtle",
+        "url": "programming/python/turtle-intro/",
+        "tst": 5
+    },{
+        "txt": "Plotting points in Python",
+        "url": "programming/python/point-plotting/"
+    },{
+        "txt": "Drawing spirals with the Python turtle",
+        "url": "programming/python/turtle-spirals/"
+    },{
+        "txt": "CIE test 1",
+        "url": "programming/cie/testing/test-suite/",
+        "tst": 5
+    },{
+        "txt": "CIE assessment 1",
+        "url": "programming/cie/cie-programming-assessment-1.hash/" },
+    {
+        "txt": "Introduction to image convolutions",
+        "url": "graphics/convolutions/",
+        "tst": 5
+    },
+    {
+        "txt": "Representing colour",
+        "url": "graphics/representing-colour/"
+    },
+    {
+        "txt": "Rasterising circles in Python",
+        "url": "graphics/rasterising-circles/",
+        "tst": 2
+    },
+    {
+        "txt": "Chaikin's algorithm",
+        "url": "graphics/chaikins-algorithm/",
+        "tst": 5
+    },
+    {
+        "txt": "Python turtle geometry",
+        "url": "graphics/turtle-geometry/"
+    },
+    {
+        "txt": "Kung fu dictionary compression",
+        "url": "compression/compress-fu/",
+        "tst": 5
+    },
+    {
+        "txt": "Pixel matching machine learning",
+        "url": "ai-curriculum/pixel-matching-learner/",
+        "tst": 5
+    },
+    {
+        "txt": "Condition controlled loops - part 1",
+        "url" : "programming/python/condition-controlled-loops-1/"
+    }
+]

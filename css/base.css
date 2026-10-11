@@ -1,0 +1,62 @@
+@import url("buttons.css");
+
+@font-face {
+  font-family: digital;
+  src: url('../img/fonts/digital-7.ttf');
+}
+
+/*********************************************************************
+ * Page template styles                                              *
+ *********************************************************************/
+
+#title-nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        max-width: 3rem;
+        max-height: 3rem;
+    }
+}
+
+#centre-column {
+    max-width: 40rem;
+}
+
+/*********************************************************************
+ * Miscellaneous utility classes                                     *
+ *********************************************************************/
+
+.hidden {
+    display: none !important;
+}
+
+.highlight {
+    animation: pulse 0.6s ease-out;
+}
+
+@keyframes pulse {
+    0% { background-color: #ffd700; transform: scale(1); }
+    50% { background-color: #ffed4e; transform: scale(1.05); }
+    100% { background-color: transparent; transform: scale(1); }
+}
+
+img.icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  img.icon {
+    filter: brightness(0) invert(1);
+  }
+}
+
+article.lesson {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
