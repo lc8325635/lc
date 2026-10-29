@@ -1,0 +1,80 @@
+{
+    "width": 13,
+    "height": 15,
+    "across": [
+        {
+            "x": 6,
+            "y": 0,
+            "ordinal": 1,
+            "length": 6,
+            "clue": "What type of computer provides data or services to other computers on a network?",
+            "check": "3d27c95bfdbea691b250894d96852844"
+        },
+        {
+            "x": 5,
+            "y": 12,
+            "ordinal": 9,
+            "length": 6,
+            "clue": "What is a small piece of data sent over a network called?",
+            "check": "0334b8669eb43f45f9bccb223186be65"
+        },
+        {
+            "x": 5,
+            "y": 4,
+            "ordinal": 4,
+            "length": 7,
+            "clue": "What is it called when a system stops waiting for a response because it took too long?",
+            "check": "070a0fb40f6c308ab544b227660aadff"
+        },
+        {
+            "x": 5,
+            "y": 8,
+            "ordinal": 7,
+            "length": 8,
+            "clue": "What security system controls and blocks unsafe network traffic?",
+            "check": "7771119a34800a9d99fdf8b2c4891544"
+        },
+        {
+            "x": 0,
+            "y": 10,
+            "ordinal": 8,
+            "length": 9,
+            "clue": "What term describes the maximum amount of data that can travel through a network in a given time?",
+            "check": "0702368c866c04bdeda3950c3eab914e"
+        }
+    ],
+    "down": [
+        {
+            "x": 5,
+            "y": 1,
+            "ordinal": 3,
+            "length": 6,
+            "clue": "What device connects computers in the same network and sends data only to the intended computer?",
+            "check": "4239f063a3d4fb9d38a0182be6e39e76"
+        },
+        {
+            "x": 8,
+            "y": 0,
+            "ordinal": 2,
+            "length": 6,
+            "clue": "What device connects different networks and directs data to the correct place?",
+            "check": "760856a0760f985fd50dbc8748cfe0cb"
+        },
+        {
+            "x": 11,
+            "y": 4,
+            "ordinal": 5,
+            "length": 8,
+            "clue": "What is the physical or logical layout of a computer network called?",
+            "check": "71f690891f5ef9e4ebaf6203a994c312"
+        },
+        {
+            "x": 7,
+            "y": 7,
+            "ordinal": 6,
+            "length": 8,
+            "clue": "What is a set of rules for sending and receiving data on a network?",
+            "check": "83a59f4531c50a35ebc414248499e7df"
+        }
+    ]
+}

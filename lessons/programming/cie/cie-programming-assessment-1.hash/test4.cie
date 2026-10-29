@@ -1,0 +1,11 @@
+// Test 1D array declaration
+
+DECLARE Scores : ARRAY[1:20] OF INTEGER
+Scores[1] <- 7
+ASSERT Scores[1] = 7
+
+DECLARE Foo : ARRAY[1:10,1:2] OF STRING
+Foo[2,2] <- "Hello"
+OUTPUT Foo[2,2]
+
+OUTPUT "Tests passed!"
