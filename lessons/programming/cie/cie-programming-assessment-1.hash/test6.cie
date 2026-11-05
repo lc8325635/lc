@@ -1,0 +1,13 @@
+TYPE Person
+ DECLARE Name : STRING
+ DECLARE Age : INTEGER
+ENDTYPE
+
+DECLARE Employee : Person
+Employee.Name <- "Fred"
+Employee.Age <- 31
+
+ASSERT Employee.Name = "Fred"
+ASSERT Employee.Age = 31
+
+OUTPUT "All tests passed!"

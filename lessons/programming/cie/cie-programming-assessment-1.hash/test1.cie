@@ -1,0 +1,37 @@
+// Test basic arithmetic
+
+ASSERT 10 + 15 = 25
+ASSERT 10 - 15 = -5
+ASSERT 7 * 8 = 56
+ASSERT 3 / 2 = 1.5
+ASSERT 11 ^ 2 = 121
+
+// Test inequalities
+
+ASSERT 8 > 4
+ASSERT NOT (4 > 8)
+ASSERT -3 < 1
+ASSERT NOT (1 < -3)
+ASSERT 6 >= 3
+ASSERT 6 >= 6
+ASSERT 6 < 10
+ASSERT 6 <= 10
+
+// Test integer variables
+
+DECLARE Var1 : INTEGER
+DECLARE Var2 : INTEGER
+
+Var1 <- 131
+Var2 <- 157
+
+ASSERT Var2 - Var1 = 26
+
+// Test constants
+
+CONSTANT Pi = 3.1415265
+
+ASSERT 2.0 * Pi > 6.28
+ASSERT 2.0 * Pi < 6.29
+
+OUTPUT "All tests passed!"

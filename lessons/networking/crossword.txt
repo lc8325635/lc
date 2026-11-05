@@ -1,0 +1,11 @@
+ROUTER What device connects different networks and directs data to the correct place?
+PACKET What is a small piece of data sent over a network called?
+TIMEOUT What is it called when a system stops waiting for a response because it took too long?
+PROTOCOL What is a set of rules for sending and receiving data on a network?
+FIREWALL What security system controls and blocks unsafe network traffic?
+SWITCH What device connects computers in the same network and sends data only to the intended computer?
+SERVER What type of computer provides data or services to other computers on a network?
+CLIENT What type of computer requests data or services from a server?
+BANDWIDTH What term describes the maximum amount of data that can travel through a network in a given time?
+TOPOLOGY What is the physical or logical layout of a computer network called?
+

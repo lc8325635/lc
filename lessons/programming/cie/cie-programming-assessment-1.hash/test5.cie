@@ -1,0 +1,7 @@
+PROCEDURE Foo(name: STRING, age: INTEGER)
+ OUTPUT "Hello", name, age
+ENDPROCEDURE
+
+OUTPUT "Hello before call"
+CALL Foo("Fred", 20)
+OUTPUT "Hello after call"
