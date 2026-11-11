@@ -1,0 +1,14 @@
+div.questions {
+
+    & div {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    & img {
+        border: 1px solid black;
+        width: 5rem;
+    }
+}

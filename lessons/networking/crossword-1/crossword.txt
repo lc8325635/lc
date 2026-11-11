@@ -1,0 +1,12 @@
+ROUTER A device which connects networks together.
+PACKET A small piece of data sent over a network.
+TIMEOUT When a system stops waiting for a response because it took too long.
+PROTOCOL A set of rules for communication.
+SERVER A computer which responds to requests on a network.
+BANDWIDTH The maximum amount of data that be sent in a given time.
+TOPOLOGY The shape of a network.
+AUTHENTICATION Proof that you are who you claim to be.
+ASYMMETRIC A type of encryption that uses two different keys.
+PARITY An error checking method that can be even or odd.
+ECHO An error checking method that sends the same data twice.
+XOR A logic gate which detects if the inputs are different.

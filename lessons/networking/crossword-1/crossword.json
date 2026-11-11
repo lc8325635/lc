@@ -1,0 +1,96 @@
+{
+    "width": 21,
+    "height": 14,
+    "across": [
+        {
+            "x": 6,
+            "y": 13,
+            "ordinal": 10,
+            "length": 4,
+            "clue": "An error checking method that sends the same data twice.",
+            "check": "d61484f1331c7f66061e43b859556409"
+        },
+        {
+            "x": 14,
+            "y": 6,
+            "ordinal": 8,
+            "length": 6,
+            "clue": "A computer which responds to requests on a network.",
+            "check": "3d27c95bfdbea691b250894d96852844"
+        },
+        {
+            "x": 4,
+            "y": 2,
+            "ordinal": 4,
+            "length": 6,
+            "clue": "A device which connects networks together.",
+            "check": "760856a0760f985fd50dbc8748cfe0cb"
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "ordinal": 7,
+            "length": 8,
+            "clue": "The shape of a network.",
+            "check": "71f690891f5ef9e4ebaf6203a994c312"
+        },
+        {
+            "x": 0,
+            "y": 10,
+            "ordinal": 9,
+            "length": 9,
+            "clue": "The maximum amount of data that be sent in a given time.",
+            "check": "0702368c866c04bdeda3950c3eab914e"
+        },
+        {
+            "x": 7,
+            "y": 4,
+            "ordinal": 6,
+            "length": 14,
+            "clue": "Proof that you are who you claim to be.",
+            "check": "c1f244be04c43841756fff0cdb74f994"
+        }
+    ],
+    "down": [
+        {
+            "x": 13,
+            "y": 0,
+            "ordinal": 1,
+            "length": 6,
+            "clue": "An error checking method that can be even or odd.",
+            "check": "aeef6f4aa155fd52d4dbea5ff3cd930a"
+        },
+        {
+            "x": 15,
+            "y": 2,
+            "ordinal": 5,
+            "length": 6,
+            "clue": "A small piece of data sent over a network.",
+            "check": "0334b8669eb43f45f9bccb223186be65"
+        },
+        {
+            "x": 11,
+            "y": 1,
+            "ordinal": 3,
+            "length": 7,
+            "clue": "When a system stops waiting for a response because it took too long.",
+            "check": "070a0fb40f6c308ab544b227660aadff"
+        },
+        {
+            "x": 9,
+            "y": 1,
+            "ordinal": 2,
+            "length": 8,
+            "clue": "A set of rules for communication.",
+            "check": "83a59f4531c50a35ebc414248499e7df"
+        },
+        {
+            "x": 7,
+            "y": 4,
+            "ordinal": 6,
+            "length": 10,
+            "clue": "A type of encryption that uses two different keys.",
+            "check": "d4cb95b2d550c20b06f46e10d4c7c7b2"
+        }
+    ]
+}
