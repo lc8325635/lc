@@ -1,0 +1,89 @@
+
+        <!-- 1. 首页：标题与日期 -->
+        <section class="layout-title">
+          <p class="date" data-pageVar="today">Today</p>
+          <h1 class="title">Substitution Ciphers</h1>
+          <p class="cn" style="font-size: 1.2em; margin-top: 1rem;">替换密码</p>
+        </section>
+
+        <!-- 2. 导入活动：复习凯撒密码 -->
+        <section class="layout-top-bottom">
+          <div class="header">
+            <p class="en">Starter: Decrypt this Caesar cipher (Shift +3)</p>
+            <p class="cn">导入活动：解密这个凯撒密码（偏移量 +3）</p>
+          </div>
+          <div class="content" style="flex-direction: column; gap: 2rem; font-size: 1.5em; text-align: center;">
+            <p><strong>Ciphertext:</strong> <span style="color: #dc3545; letter-spacing: 0.2em;">PDWKV</span></p>
+            <p><strong>Plaintext:</strong> <span style="color: #6c757d;">? ? ? ? ?</span></p>
+          </div>
+        </section>
+
+        <!-- 3. 概念解释：什么是替换密码 -->
+        <section class="layout-split">
+          <div class="text-side">
+            <p class="en" style="font-size: 1.2em;">What is a Substitution Cipher?</p>
+            <p class="cn" style="font-size: 1em; margin-bottom: 2rem;">什么是替换密码？</p>
+            <ul style="line-height: 2;">
+              <li>
+                <span class="en">Each letter is replaced by another.</span><br />
+                <span class="cn">每个字母被替换成另一个字母。</span>
+              </li>
+              <li>
+                <span class="en">The alphabet is completely shuffled.</span><br />
+                <span class="cn">整个字母表被完全打乱。</span>
+              </li>
+              <li>
+                <span class="en">Much harder to break than Caesar!</span><br />
+                <span class="cn">比凯撒密码更难破解！</span>
+              </li>
+            </ul>
+          </div>
+          <div class="media-side">
+            <table style="font-size: 0.9em; border-collapse: collapse; text-align: center;">
+              <tr>
+                <th style="padding: 12px 20px; border: 1px solid #dee2e6; background: #f8f9fa;">Plain</th>
+                <td style="padding: 12px 20px; border: 1px solid #dee2e6;">A</td>
+                <td style="padding: 12px 20px; border: 1px solid #dee2e6;">B</td>
+                <td style="padding: 12px 20px; border: 1px solid #dee2e6;">C</td>
+                <td style="padding: 12px 20px; border: 1px solid #dee2e6;">D</td>
+                <td style="padding: 12px 20px; border: 1px solid #dee2e6;">E</td>
+              </tr>
+              <tr>
+                <th style="padding: 12px 20px; border: 1px solid #dee2e6; background: #f8f9fa;">Cipher</th>
+                <td style="padding: 12px 20px; border: 1px solid #dee2e6; color: #0d6efd; font-weight: bold;">X</td>
+                <td style="padding: 12px 20px; border: 1px solid #dee2e6; color: #0d6efd; font-weight: bold;">M</td>
+                <td style="padding: 12px 20px; border: 1px solid #dee2e6; color: #0d6efd; font-weight: bold;">P</td>
+                <td style="padding: 12px 20px; border: 1px solid #dee2e6; color: #0d6efd; font-weight: bold;">L</td>
+                <td style="padding: 12px 20px; border: 1px solid #dee2e6; color: #0d6efd; font-weight: bold;">Q</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+
+        <!-- 4. 拓展内容：破解替换密码的 3 种方法 -->
+        <section class="layout-top-bottom">
+          <div class="header">
+            <p class="en">3 Ways to Break a Substitution Cipher</p>
+            <p class="cn">破解替换密码的 3 种方法</p>
+          </div>
+          <div class="content" style="display: flex; gap: 2rem; justify-content: space-around; align-items: stretch; font-size: 0.85em;">
+            <div style="flex: 1; background: #e7f1ff; padding: 1.5rem; border-radius: 12px;">
+              <h3 style="color: #0d6efd; margin-bottom: 0.5rem;">1. Letter Frequencies</h3>
+              <p class="cn" style="margin-bottom: 1rem;">字母频率</p>
+              <p class="en">'E' is the most common letter in English.</p>
+              <p class="cn">英语中最常见的字母是 'E'。</p>
+            </div>
+            <div style="flex: 1; background: #d1e7dd; padding: 1.5rem; border-radius: 12px;">
+              <h3 style="color: #198754; margin-bottom: 0.5rem;">2. Common Words</h3>
+              <p class="cn" style="margin-bottom: 1rem;">常见单词</p>
+              <p class="en">Guess short words like "THE" or "AND".</p>
+              <p class="cn">猜测像 "THE" 或 "AND" 这样的短词。</p>
+            </div>
+            <div style="flex: 1; background: #fff3cd; padding: 1.5rem; border-radius: 12px;">
+              <h3 style="color: #cc9a06; margin-bottom: 0.5rem;">3. Using a Crib</h3>
+              <p class="cn" style="margin-bottom: 1rem;">使用已知明文</p>
+              <p class="en">Guess a word you know is in the text.</p>
+              <p class="cn">猜测文本中你确定包含的某个词。</p>
+            </div>
+          </div>
+        </section>

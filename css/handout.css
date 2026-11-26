@@ -1,0 +1,77 @@
+div.handout {
+    & mjx-container {
+        pointer-events: none;
+    }
+
+    @media print {
+        & div.geogebra {
+            display: none;
+        }
+    }
+
+    & .model {
+        font-family: learner;
+        color: var(--pico-primary);
+    }
+
+    & .textbox {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        border: 1px solid var(--pico-color);
+        padding: 1rem;
+        text-align: center;
+    }
+
+    & h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    & h2 {
+        page-break-before: always;
+    }
+
+    & h2,h3 {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    & ol.questions > li {
+        margin-top: 1rem;
+        break-inside: avoid;
+    }
+
+    & ol.reasoning {
+        list-style-type: none;
+        line-height: 2rem;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: stretch;
+
+        & > li {
+            padding: 0 1rem;
+        }
+    }
+
+    & li.model {
+        border-bottom: dotted 1px var(--pico-color);
+    }
+
+    & .invisible {
+        opacity: 0;
+    }
+
+    & .ink {
+        transition: 1s ease-in-out;
+    }
+
+    & .clickable {
+        background: #9ed19900;
+        background: linear-gradient(
+            180deg,
+            rgba(128, 128, 0, 0) 0%,
+            rgba(128, 128, 0, 0.2) 100%
+        );
+    }
+}

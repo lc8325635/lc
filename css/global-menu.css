@@ -1,0 +1,56 @@
+#global-menu {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: end;
+
+    & .title-bar {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: end;
+    }
+
+    & ul.drop-down {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: stretch;
+
+        margin-left: auto;
+    }
+
+    & ul li {
+        list-style-type: none;
+        margin: 0;
+        border: 0;
+        padding: 0;
+    }
+
+    button {
+        background: var(--pico-secondary-background);
+        color: var(--pico-secondary-color);
+
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+        padding: 0.25rem;
+        text-align: left;
+
+        &.menu-item {
+            width: 100%;
+        }
+
+        &:hover {
+            background: var(--pico-secondary-hover);
+            color: var(--pico-secondary-inverse);
+        }
+    }
+
+    #toggle-button {
+        background: transparent;
+        border: 0;
+    }
+}
